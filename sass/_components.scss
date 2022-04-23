@@ -130,7 +130,7 @@
     max-width: 29.5rem;
     border-radius: .6rem;
     width: 100%;
-    background: url('../img/blog_drbl_4x.webp') no-repeat center center;
+    background: url('../img/works2.png') no-repeat center center;
     background-size: cover;
     margin-bottom: 12px;
   }
@@ -143,6 +143,18 @@
     border-radius: .6rem;
     width: 100%;
     background: url('../img/blog_drbl_4x.webp') no-repeat center center;
+    background-size: cover;
+    margin-bottom: 12px;
+  }
+}
+
+.tonic-4 {
+  &__image-holder {
+    height: 22rem;
+    max-width: 29.5rem;
+    border-radius: .6rem;
+    width: 100%;
+    background: url('../img/works2.png') no-repeat center center;
     background-size: cover;
     margin-bottom: 12px;
   }
@@ -183,7 +195,6 @@
     list-style: none;
     display: flex;
     gap: .8rem;
-    color: var(--color-primary);
     margin-top: 1.2rem;
   }
 
@@ -193,6 +204,7 @@
     border-radius: .8rem;
     a{
       text-decoration: none;
+      color: var(--color-primary);
     }
   }
 

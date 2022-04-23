@@ -5,14 +5,14 @@
 
   margin-top: 11.4rem;
   display: grid;
-  grid-template-rows: 55.2rem 59.6rem 55.2rem 59.6rem;
+  grid-template-rows: 55.2rem 59.6rem 58.2rem 62rem 126.3rem;
 
     @include breakpoint('mobile') {
     max-width: 37.5rem;
     width: 100%;
 
     &:not(:last-child) {
-      grid-row-gap: 8.8rem;
+      grid-row-gap: 7rem;
     }
 
     & > * {
