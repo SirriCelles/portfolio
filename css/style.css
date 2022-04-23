@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
+:root {
+  --color-white: #fff;
+  --color-background: #e5e5e5;
+  --color-primary: #6070ff;
+  --color-primary-light-1: #cbcdff;
+  --color-primary-light-2: #ebebff;
+  --color-border: #dfe1e6;
+  --color-header-text: #172b4d;
+  --color-text: #344563;
+  --color-primary-text: #7f8cff; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: var(--color-background);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  line-height: 2.4rem; }
+
+p {
+  line-height: 2.4rem;
+  color: var(--color-text); }
+
+.landing-page {
+  background-color: var(--color-white); }
+  @media (max-width: 37.5rem) {
+    .landing-page {
+      height: 66.8rem;
+      max-width: 37.5rem;
+      width: 100%; } }
+
+.nav {
+  padding: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav__logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-transform: capitalize;
+    text-align: center; }
+    @media (max-width: 37.5rem) {
+      .nav__logo {
+        line-height: 2rem;
+        width: 7.6rem;
+        height: 2rem; } }
+  .nav__menu-box {
+    flex: 0 0 2rem; }
+  .nav__menu {
+    width: 100%;
+    border: 1px solid var(--color-primary);
+    margin: 0.4rem 0; }
+
+.landing {
+  max-width: 40.2rem;
+  max-height: 61.3rem;
+  padding-bottom: 2rem;
+  background-color: var(--color-white); }
+  .landing__wrapper {
+    width: 100%;
+    height: 58.7rem;
+    background-image: url("../img/header-shapes mobile@2x.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0 2.4rem;
+    margin-bottom: 2.6rem; }
+  .landing__header {
+    padding-top: 10.6rem;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+    color: var(--color-header-text);
+    margin: 1.2rem 0; }
+  .landing__text {
+    margin: 1.2rem 0; }
+  .landing__link {
+    text-transform: uppercase;
+    color: var(--color-primary-text);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 0.8rem; }
+  .landing__social-media {
+    margin: 1.2rem 0; }
+    .landing__social-media ul {
+      list-style: none;
+      display: flex; }
+  .landing__social-link {
+    text-decoration: none; }
+  .landing__icon {
+    margin-right: 1.9rem;
+    cursor: pointer; }

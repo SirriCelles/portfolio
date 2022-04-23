@@ -1,14 +1,40 @@
 
 // css variables
 :root {
-  --color-white: #FFFFFF;
-  --color-background: #E5E5E5;
+  --color-white: #fff;
+  --color-background: #e5e5e5;
+  --color-primary: #6070ff;
+  --color-primary-light-1: #cbcdff;
+  --color-primary-light-2: #ebebff;
+  --color-border: #dfe1e6;
+  --color-header-text: #172b4d;
+  --color-text: #344563;
+  --color-primary-text: #7f8cff;
+}
 
-  --color-primary: #6070FF;
-  --color-primary-light-1: #CBCDFF;
-  --color-primary-light-2: #EBEBFF;
+// screen sizes
+$breakpoints: (
+  'desktop': (min-width: 70em),
+  'laptop': (min-width: 64em),
+  'tablet': (min-width: 50em),
+  'phablet': (min-width: 37.5em),
+  'mobile': (max-width: 37.5rem)
+) !default;
 
-  --color-border: #DFE1E6;
+////Mixins for responsive breakpoints
+@mixin breakpoint($breakpoint) {
+  //if breakpoint exist
+  @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+    // display media query based on value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  //if map doesnot have breakpoint
+  @else {
+    @warn "Sorry, no value could be retrieved from `#{$breakpoint}`." + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
 }
 
 * {
@@ -20,21 +46,21 @@
 *::after,
 *::before {
   box-sizing: border-box;
-},
+}
 
-html{
+html {
   font-size: 62.5%;
 }
 
-body{
+body {
   background-color: var(--color-background);
   font-size: 1.6rem;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
-}
-
-p{
   line-height: 2.4rem;
 }
 
-
+p {
+  line-height: 2.4rem;
+  color: var(--color-text);
+}
