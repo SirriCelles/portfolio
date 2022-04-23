@@ -1,3 +1,6 @@
+/////////////////
+//  LANDING PAGE
+
 .landing-page {
   background-color: var(--color-white);
 
@@ -14,12 +17,13 @@
   justify-content: space-between;
   align-items: center;
 
-  &__logo{
+  &__logo {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--color-primary);
     text-transform: capitalize;
     text-align: center;
+
     @include breakpoint('mobile') {
       line-height: 2rem;
       width: 7.6rem;
@@ -27,7 +31,7 @@
     }
   }
 
-  &__menu-box{
+  &__menu-box {
     flex: 0 0 2rem;
   }
 
@@ -35,13 +39,9 @@
     width: 100%;
     // border: 1.2px solid #ACB7C3;
     border: 1px solid var(--color-primary);
-    margin: .4rem 0;
-  }
-
-  &__menu--line-1 {
+    margin: 0.4rem 0;
   }
 }
-
 
 .landing {
   max-width: 40.2rem;
@@ -72,7 +72,7 @@
     margin: 1.2rem 0;
   }
 
-  &__text{
+  &__text {
     margin: 1.2rem 0;
   }
 
@@ -82,14 +82,14 @@
     cursor: pointer;
     text-decoration: none;
     font-weight: 500;
-    margin: 0 .8rem;
+    margin: 0 0.8rem;
   }
 
-  &__social-media{
+  &__social-media {
     margin: 1.2rem 0;
   }
 
-  &__social-link{
+  &__social-link {
     text-decoration: none;
   }
 

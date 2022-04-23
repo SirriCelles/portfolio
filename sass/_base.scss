@@ -1,17 +1,15 @@
 
 // css variables
 :root {
-  --color-white: #FFFFFF;
-  --color-background: #E5E5E5;
-
-  --color-primary: #6070FF;
-  --color-primary-light-1: #CBCDFF;
-  --color-primary-light-2: #EBEBFF;
-
-  --color-border: #DFE1E6;
-  --color-header-text: #172B4D;
+  --color-white: #fff;
+  --color-background: #e5e5e5;
+  --color-primary: #6070ff;
+  --color-primary-light-1: #cbcdff;
+  --color-primary-light-2: #ebebff;
+  --color-border: #dfe1e6;
+  --color-header-text: #172b4d;
   --color-text: #344563;
-  --color-primary-text: #7F8CFF;
+  --color-primary-text: #7f8cff;
 }
 
 // screen sizes
@@ -21,7 +19,7 @@ $breakpoints: (
   'tablet': (min-width: 50em),
   'phablet': (min-width: 37.5em),
   'mobile': (max-width: 37.5rem)
-)!default;
+) !default;
 
 ////Mixins for responsive breakpoints
 @mixin breakpoint($breakpoint) {
@@ -34,7 +32,7 @@ $breakpoints: (
   }
 
   //if map doesnot have breakpoint
-  @else{
+  @else {
     @warn "Sorry, no value could be retrieved from `#{$breakpoint}`." + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
@@ -50,11 +48,11 @@ $breakpoints: (
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
-body{
+body {
   background-color: var(--color-background);
   font-size: 1.6rem;
   font-weight: 400;
@@ -62,9 +60,7 @@ body{
   line-height: 2.4rem;
 }
 
-p{
+p {
   line-height: 2.4rem;
   color: var(--color-text);
 }
-
-
