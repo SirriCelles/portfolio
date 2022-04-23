@@ -1,24 +1,53 @@
 .landing-page {
   padding: 2.4rem;
   background-color: var(--color-white);
-  
+
+  @include breakpoint('mobile') {
+    height: 66rem;
+    max-width: 35.1rem;
+    width: 100%;
+  }
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &__logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-transform: capitalize;
+    text-align: center;
+    @include breakpoint('mobile') {
+      line-height: 2rem;
+      width: 7.6rem;
+      height: 2rem;
+    }
+  }
 
+  &__menu-box{
+    flex: 0 0 2rem;
   }
 
   &__menu {
+    width: 100%;
+    // border: 1.2px solid #ACB7C3;
+    border: 1px solid var(--color-primary);
+    margin: .4rem 0;
+  }
 
+  &__menu--line-1 {
   }
 }
 
 
-
 .landing {
-
+  max-width: 40.2rem;
+  width: 100%;
+  height: 58.7rem;
+  background-image: url('../img/header-shapes\ mobile@2x.svg');
 
   &__header {
 
