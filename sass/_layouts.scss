@@ -1,0 +1,25 @@
+//////
+// WORKS LAYOUT
+
+.works {
+  margin-top: 11.4rem;
+  display: grid;
+  grid-template-rows: 55.2rem 59.6rem 58.2rem 62rem 126.3rem;
+
+  @include breakpoint('mobile') {
+    max-width: 37.5rem;
+    width: 100%;
+  }
+
+  grid-row-gap: 7rem;
+
+  & > * {
+    background-color: var(--color-white);
+  }
+
+  .work {
+    border: 1px solid var(--color-border);
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+  }
+}

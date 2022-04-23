@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 - run `npm install` to download all project dependencies
 ### Usage
-- On the terminal or command prompt, run `npm run watch:sass`. This scripts compiles you sass code to css during development.
+- On the terminal or command prompt, run `npm run watch:sass`. This scripts compiles your sass code to css during development.
 
 ## Authors
 
