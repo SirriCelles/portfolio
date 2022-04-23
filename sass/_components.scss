@@ -2,7 +2,7 @@
   background-color: var(--color-white);
 
   @include breakpoint('mobile') {
-    height: 66rem;
+    height: 66.8rem;
     max-width: 37.5rem;
     width: 100%;
   }
@@ -45,16 +45,23 @@
 
 .landing {
   max-width: 40.2rem;
-  width: 100%;
-  height: 58.7rem;
-  background-image: url('../img/header-shapes\ mobile@2x.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 0 2.4rem;
+  max-height: 61.3rem;
+  padding-bottom: 2rem;
+  background-color: var(--color-white);
+
+  &__wrapper {
+    width: 100%;
+    height: 58.7rem;
+    background-image: url('../img/header-shapes\ mobile@2x.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0 2.4rem;
+    margin-bottom: 2.6rem;
+  }
 
   &__header {
     padding-top: 10.6rem;
@@ -82,7 +89,12 @@
     margin: 1.2rem 0;
   }
 
+  &__social-link{
+    text-decoration: none;
+  }
+
   &__icon {
     margin-right: 1.9rem;
+    cursor: pointer;
   }
 }
