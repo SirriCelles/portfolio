@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Sirri Celles**
 
 - GitHub: [@SirriCelles](https://github.com/SirriCelles)
 - Twitter: [@SirriCelles](https://twitter.com/SirriCelles?t=fZl0blItFUQDC5vozH47nA&s=09)
