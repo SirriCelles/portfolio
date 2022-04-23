@@ -107,3 +107,14 @@ p {
   .landing__icon {
     margin-right: 1.9rem;
     cursor: pointer; }
+
+.works {
+  display: grid;
+  grid-template-rows: 55.2rem 59.6rem 55.2rem 59.6rem 126.3rem; }
+  @media (max-width: 37.5rem) {
+    .works {
+      height: 66.8rem;
+      max-width: 37.5rem;
+      width: 100%; } }
+  .works > * {
+    border: 1px solid var(--color-border); }
