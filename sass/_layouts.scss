@@ -10,14 +10,12 @@
     @include breakpoint('mobile') {
     max-width: 37.5rem;
     width: 100%;
+  }
 
-    &:not(:last-child) {
-      grid-row-gap: 7rem;
-    }
+  grid-row-gap: 7rem;
 
-    & > * {
-      background-color: var(--color-white);
-    }
+  & > * {
+    background-color: var(--color-white);
   }
 
   .work {

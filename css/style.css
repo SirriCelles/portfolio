@@ -199,21 +199,98 @@ p {
     letter-spacing: 0.03em;
     margin: 1.8rem 0; }
 
-.about__landing {
-  margin: 0 2.4rem; }
+.about {
+  border-top-right-radius: 4rem 3.5rem;
+  display: flex; }
+  @media (max-width: 37.5rem) {
+    .about {
+      flex-direction: column; } }
+  .about__landing {
+    margin: 0 2.4rem; }
+
+.skills__list {
+  list-style: none;
+  margin: 0 3.6rem; }
+
+.skills__list-item:not(:first-child) {
+  padding: 2.3rem 0;
+  border-bottom: 1px solid var(--color-border); }
+
+.skills__lang-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.skills__lang-text {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 500; }
+
+.skills__lang-icon-wrapper {
+  margin-right: 3rem; }
+
+.skills__lang-list {
+  margin-top: 1.8rem;
+  list-style: none;
+  padding: 1rem; }
+
+.skills__lang-list--item {
+  border-radius: .8rem;
+  background-color: #F7F7F9;
+  margin: 1.2rem 0; }
+  @media (max-width: 37.5rem) {
+    .skills__lang-list--item {
+      width: 30.3rem; } }
+
+.skills__lang-list--link {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 2.1rem 1.2rem;
+  text-decoration: none;
+  cursor: pointer; }
+
+.skills__lang-list--text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: #253858; }
+
+.skills__lang-list--iconjs {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  background: url("/img/javascript.svg") no-repeat center center;
+  background-size: cover; }
+
+.skills__lang-list--iconht {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  background: url("/img/html.svg") no-repeat center center;
+  background-size: cover; }
+
+.skills__lang-list--iconcs {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  background: url("/img/css3.svg") no-repeat center center;
+  background-size: cover; }
 
 .works {
   margin-top: 11.4rem;
   display: grid;
-  grid-template-rows: 55.2rem 59.6rem 58.2rem 62rem 126.3rem; }
+  grid-template-rows: 55.2rem 59.6rem 58.2rem 62rem 126.3rem;
+  grid-row-gap: 7rem; }
   @media (max-width: 37.5rem) {
     .works {
       max-width: 37.5rem;
-      width: 100%; }
-      .works:not(:last-child) {
-        grid-row-gap: 7rem; }
-      .works > * {
-        background-color: var(--color-white); } }
+      width: 100%; } }
+  .works > * {
+    background-color: var(--color-white); }
   .works .work {
     margin-left: 2.4rem;
     margin-right: 2.4rem;
