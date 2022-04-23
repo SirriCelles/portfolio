@@ -112,6 +112,11 @@ p {
   font-weight: 700;
   line-height: 5.2rem;
   color: var(--color-header-text); }
+  @media (max-width: 37.5rem) {
+    .header__about {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.2rem; } }
 
 .tonic-1__image-holder {
   height: 22rem;
@@ -192,7 +197,10 @@ p {
     line-height: 2.4rem;
     font-weight: 600;
     letter-spacing: 0.03em;
-    margin: 2rem 0; }
+    margin: 1.8rem 0; }
+
+.about__landing {
+  margin: 0 2.4rem; }
 
 .works {
   margin-top: 11.4rem;

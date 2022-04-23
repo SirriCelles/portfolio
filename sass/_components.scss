@@ -108,6 +108,14 @@
   font-weight: 700;
   line-height: 5.2rem;
   color: var(--color-header-text);
+
+  &__about{
+    @include breakpoint('mobile') {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.2rem;
+    }
+  }
 }
 
 ////////////@at-root
@@ -219,6 +227,17 @@
     line-height: 2.4rem;
     font-weight: 600;
     letter-spacing: 0.03em;
-    margin: 2rem 0;
+    margin: 1.8rem 0;
+  }
+}
+
+
+////////////
+// ABOUT
+.about{
+
+
+  &__landing {
+    margin: 0 2.4rem;
   }
 }
