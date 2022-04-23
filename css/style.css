@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
 :root {
   --color-white: #fff;
-  --color-background: #E5E5E5;
+  --color-background: #e5e5e5;
   --color-primary: #6070ff;
-  --color-prmary-dark: #396DF2;
+  --color-prmary-dark: #396df2;
   --color-primary-light-1: #cbcdff;
   --color-primary-light-2: #ebebff;
-  --color-border: #DFE1E6;
+  --color-border: #dfe1e6;
   --color-header-text: #172b4d;
   --color-text: #344563;
-  --color-text-lighter: #7A869A;
+  --color-text-lighter: #7a869a;
   --color-primary-text: #7f8cff; }
 
 * {
@@ -121,7 +121,7 @@ p {
 .tonic-1__image-holder {
   height: 22rem;
   max-width: 29.5rem;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   width: 100%;
   background: url("../img/blog_drbl_4x.webp") no-repeat center center;
   background-size: cover;
@@ -130,7 +130,7 @@ p {
 .tonic-2__image-holder {
   height: 22rem;
   max-width: 29.5rem;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   width: 100%;
   background: url("../img/works2.png") no-repeat center center;
   background-size: cover;
@@ -139,7 +139,7 @@ p {
 .tonic-3__image-holder {
   height: 22rem;
   max-width: 29.5rem;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   width: 100%;
   background: url("../img/blog_drbl_4x.webp") no-repeat center center;
   background-size: cover;
@@ -148,17 +148,20 @@ p {
 .tonic-4__image-holder {
   height: 22rem;
   max-width: 29.5rem;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   width: 100%;
   background: url("../img/works2.png") no-repeat center center;
   background-size: cover;
   margin-bottom: 12px; }
 
 .tonic {
-  display: flex; }
+  display: flex;
+  margin: 0 2.4rem; }
   @media (max-width: 37.5rem) {
     .tonic {
-      flex-direction: column; } }
+      flex-direction: column;
+      max-width: 32.7rem;
+      width: 100%; } }
   .tonic__cat-list {
     display: flex;
     padding: 2rem 0; }
@@ -177,12 +180,12 @@ p {
   .tonic__lang-list {
     list-style: none;
     display: flex;
-    gap: .8rem;
+    gap: 0.8rem;
     margin-top: 1.2rem; }
   .tonic__lang-list--item {
-    padding: .4rem 1.2rem;
+    padding: 0.4rem 1.2rem;
     background-color: var(--color-primary-light-2);
-    border-radius: .8rem; }
+    border-radius: 0.8rem; }
     .tonic__lang-list--item a {
       text-decoration: none;
       color: var(--color-primary); }
@@ -200,14 +203,16 @@ p {
     margin: 1.8rem 0; }
     .tonic__btn:hover {
       background-color: var(--color-primary-light-2);
-      transition: all .2s; }
+      transition: all 0.2s; }
 
 .about {
   display: flex;
   border-top-right-radius: 4rem 1rem; }
   @media (max-width: 37.5rem) {
     .about {
-      flex-direction: column; } }
+      flex-direction: column;
+      max-width: 37.5rem;
+      width: 100%; } }
   .about__landing {
     margin: 0 2.4rem; }
 
@@ -225,7 +230,7 @@ p {
   align-items: center; }
 
 .skills__lang-text {
-  color: #000000;
+  color: #000;
   font-size: 2rem;
   font-weight: 500; }
 
@@ -238,8 +243,8 @@ p {
   padding: 1rem; }
 
 .skills__lang-list--item {
-  border-radius: .8rem;
-  background-color: #F7F7F9;
+  border-radius: 0.8rem;
+  background-color: #f7f7f9;
   margin: 1.2rem 0; }
   @media (max-width: 37.5rem) {
     .skills__lang-list--item {
@@ -263,7 +268,7 @@ p {
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 50%;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #fff;
   background: url("/img/javascript.svg") no-repeat center center;
   background-size: cover; }
 
@@ -271,7 +276,7 @@ p {
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 50%;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #fff;
   background: url("/img/html.svg") no-repeat center center;
   background-size: cover; }
 
@@ -279,7 +284,7 @@ p {
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 50%;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #fff;
   background: url("/img/css3.svg") no-repeat center center;
   background-size: cover; }
 
@@ -295,8 +300,6 @@ p {
   .works > * {
     background-color: var(--color-white); }
   .works .work {
-    margin-left: 2.4rem;
-    margin-right: 2.4rem;
     border: 1px solid var(--color-border);
     border-radius: 1.6rem;
     padding: 1.6rem; }
