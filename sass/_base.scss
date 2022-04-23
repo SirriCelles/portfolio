@@ -11,6 +11,31 @@
   --color-border: #DFE1E6;
 }
 
+// screen sizes
+$breakpoints: (
+  'desktop': (min-width: 70em),
+  'laptop': (min-width: 64em),
+  'tablet': (min-width: 50em),
+  'phablet': (min-width: 37.5em),
+  'mobile': (max-width: 37.5rem)
+)!default;
+
+////Mixins for responsive breakpoints
+@mixin breakpoint($breakpoint) {
+  //if breakpoint exist
+  @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+    // display media query based on value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  //if map doesnot have breakpoint
+  @else{
+    @warn "Sorry, no value could be retrieved from `#{$breakpoint}`." + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
