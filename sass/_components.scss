@@ -67,18 +67,22 @@
 
   &__text{
     margin: 1.2rem 0;
-    font-size: 1.6rem;
   }
 
   &__link {
-
+    text-transform: uppercase;
+    color: var(--color-primary-text);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 .8rem;
   }
 
   &__social-media{
-
+    margin: 1.2rem 0;
   }
 
   &__icon {
-
+    margin-right: 1.9rem;
   }
 }

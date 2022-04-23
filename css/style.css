@@ -7,7 +7,8 @@
   --color-primary-light-2: #EBEBFF;
   --color-border: #DFE1E6;
   --color-header-text: #172B4D;
-  --color-primary-text: #344563; }
+  --color-text: #344563;
+  --color-primary-text: #7F8CFF; }
 
 * {
   margin: 0;
@@ -25,10 +26,12 @@ body {
   background-color: var(--color-background);
   font-size: 1.6rem;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  line-height: 2.4rem; }
 
 p {
-  line-height: 2.4rem; }
+  line-height: 2.4rem;
+  color: var(--color-text); }
 
 .landing-page {
   background-color: var(--color-white); }
@@ -81,5 +84,15 @@ p {
     color: var(--color-header-text);
     margin: 1.2rem 0; }
   .landing__text {
-    margin: 1.2rem 0;
-    font-size: 1.6rem; }
+    margin: 1.2rem 0; }
+  .landing__link {
+    text-transform: uppercase;
+    color: var(--color-primary-text);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 .8rem; }
+  .landing__social-media {
+    margin: 1.2rem 0; }
+  .landing__icon {
+    margin-right: 1.9rem; }

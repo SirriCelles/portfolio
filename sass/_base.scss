@@ -10,7 +10,8 @@
 
   --color-border: #DFE1E6;
   --color-header-text: #172B4D;
-  --color-primary-text: #344563;
+  --color-text: #344563;
+  --color-primary-text: #7F8CFF;
 }
 
 // screen sizes
@@ -58,10 +59,12 @@ body{
   font-size: 1.6rem;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
+  line-height: 2.4rem;
 }
 
 p{
   line-height: 2.4rem;
+  color: var(--color-text);
 }
 
 
