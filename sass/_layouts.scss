@@ -3,16 +3,27 @@
 
 .works {
 
+  margin-top: 11.4rem;
   display: grid;
-  grid-template-rows: 55.2rem 59.6rem 55.2rem 59.6rem 126.3rem;
+  grid-template-rows: 55.2rem 59.6rem 55.2rem 59.6rem;
 
     @include breakpoint('mobile') {
-    height: 66.8rem;
     max-width: 37.5rem;
     width: 100%;
+
+    &:not(:last-child) {
+      grid-row-gap: 8.8rem;
+    }
+
+    & > * {
+      background-color: var(--color-white);
+    }
   }
 
-  & > * {
+  .work {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
     border: 1px solid var(--color-border);
+    border-radius: 1.6rem;
   }
 }

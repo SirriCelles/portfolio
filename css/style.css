@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
 :root {
   --color-white: #fff;
-  --color-background: #e5e5e5;
+  --color-background: #E5E5E5;
   --color-primary: #6070ff;
   --color-primary-light-1: #cbcdff;
   --color-primary-light-2: #ebebff;
-  --color-border: #dfe1e6;
+  --color-border: #DFE1E6;
   --color-header-text: #172b4d;
   --color-text: #344563;
   --color-primary-text: #7f8cff; }
@@ -68,7 +68,8 @@ p {
   max-width: 40.2rem;
   max-height: 61.3rem;
   padding-bottom: 2rem;
-  background-color: var(--color-white); }
+  background-color: var(--color-white);
+  border-bottom-left-radius: 4rem 3.5rem; }
   .landing__wrapper {
     width: 100%;
     height: 58.7rem;
@@ -109,12 +110,19 @@ p {
     cursor: pointer; }
 
 .works {
+  margin-top: 11.4rem;
   display: grid;
-  grid-template-rows: 55.2rem 59.6rem 55.2rem 59.6rem 126.3rem; }
+  grid-template-rows: 55.2rem 59.6rem 55.2rem 59.6rem; }
   @media (max-width: 37.5rem) {
     .works {
-      height: 66.8rem;
       max-width: 37.5rem;
-      width: 100%; } }
-  .works > * {
-    border: 1px solid var(--color-border); }
+      width: 100%; }
+      .works:not(:last-child) {
+        grid-row-gap: 8.8rem; }
+      .works > * {
+        background-color: var(--color-white); } }
+  .works .work {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1.6rem; }
