@@ -350,3 +350,34 @@
 
 /////////@at-root
 //CONTACT
+
+.contact {
+  height: 126.3rem;
+  width: 37.5rem;
+  background-color: #6070ff;
+  padding: 10.3rem 1.2rem 1.2rem 1.2rem;
+  border-top-left-radius: 5rem;
+
+  &__header {
+    margin-bottom: 1.2rem;
+    padding: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  &__text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #ebebff;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    text-align: center;
+    vertical-align: top;
+  }
+}
