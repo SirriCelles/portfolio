@@ -35,7 +35,7 @@ $breakpoints: (
 
   //if map doesnot have breakpoint
   @else {
-    @warn "Sorry, no value could be retrieved from `#{$breakpoint}`." + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    @warn "Sorry, no value could be retrieved from `#{$breakpoint}`." + "Available breakpoints are: `#{map-keys($breakpoints)}`.";
   }
 }
 
