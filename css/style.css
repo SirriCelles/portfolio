@@ -297,7 +297,7 @@ p {
   .contact__header {
     margin-bottom: 1.2rem;
     padding: 1.2rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -305,7 +305,7 @@ p {
     text-align: center;
     color: var(--color-white); }
   .contact__text {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #ebebff;
@@ -313,6 +313,42 @@ p {
     line-height: 2.8rem;
     text-align: center;
     vertical-align: top; }
+  .contact__form-list {
+    display: flex;
+    list-style: none;
+    margin-top: 8.7rem;
+    flex-direction: column;
+    gap: 2rem;
+    align-content: center;
+    justify-content: center;
+    width: 27.3rem; }
+  .contact__form-list--item {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #172b4d; }
+  .contact__form-input {
+    width: 32.7rem;
+    height: 4.8rem;
+    padding: 2rem 2.4rem;
+    border-radius: 0.8rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #172b4d;
+    border: none; }
+  .contact__form-textarea {
+    width: 32.7rem;
+    padding: 2rem 2.4rem;
+    border-radius: 0.8rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #172b4d;
+    border: none;
+    height: auto; }
 
 .works {
   margin-top: 11.4rem;
