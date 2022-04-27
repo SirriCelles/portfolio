@@ -150,7 +150,7 @@
     max-width: 29.5rem;
     border-radius: 0.6rem;
     width: 100%;
-    background: url("../img/blog_drbl_4x.webp") no-repeat center center;
+    background: url("../img/Snapshoot\ Portfolio.png") no-repeat center center;
     background-size: cover;
     margin-bottom: 12px;
   }
@@ -162,7 +162,7 @@
     max-width: 29.5rem;
     border-radius: 0.6rem;
     width: 100%;
-    background: url("../img/works2.png") no-repeat center center;
+    background: url("../img/Snapshoot\ Portfolio\ \(1\).png") no-repeat center center;
     background-size: cover;
     margin-bottom: 12px;
   }
@@ -233,8 +233,16 @@
     letter-spacing: 0.03em;
     margin: 1.8rem 0;
 
+    &:visited {
+      background-color: #2230D2;
+      color: #FFFFFF;
+      box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+    }
+
     &:hover {
-      background-color: var(--color-primary-light-2);
+      color: #FFFFFF;
+      background-color: #6070FF;
+      box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
       transition: all 0.2s;
     }
   }
@@ -244,14 +252,14 @@
 // ABOUT
 .about {
   display: flex;
+  border-top-right-radius: 5rem;
+  clip-path: circle(94% at 27% 67%);
 
   @include breakpoint("mobile") {
     flex-direction: column;
     max-width: 37.5rem;
     width: 100%;
   }
-
-  border-top-right-radius: 4rem 1rem;
 
   &__landing {
     margin: 0 2.4rem;
@@ -350,13 +358,27 @@
 
 /////////@at-root
 //CONTACT
-
-.contact {
-  height: 126.3rem;
+footer {
   width: 37.5rem;
   background-color: #6070ff;
-  padding: 10.3rem 1.2rem 1.2rem 1.2rem;
-  border-top-left-radius: 5rem;
+  clip-path: circle(90% at 62% 62%);
+  padding: 10.3rem 2.4rem 2.4rem 2.4rem;
+  border-top-left-radius: 9rem;
+  margin-top: -6.7rem;
+
+  background-image: url("../img/contact-me-shapes.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact {
+  width: 100%;
+  height: auto;
+
 
   &__header {
     margin-bottom: 1.2rem;
@@ -411,6 +433,17 @@
     font-weight: 400;
     color: #172b4d;
     border: none;
+
+    &:focus{
+      outline: none;
+      border: none;
+    }
+
+    &::placeholder{
+      font-family: "Poppins", sans-serif;
+      color: #172B4D;
+      font-size: 1.6rem;
+    }
   }
 
   &__form-textarea {
@@ -423,5 +456,33 @@
     color: #172b4d;
     border: none;
     height: auto;
+
+    &:focus{
+      outline: none;
+      border: none;
+      font-size: 1.5rem;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+
+  &__form-button{
+    padding: 1.6rem 1.2rem;
+    border: 1px solid var(--color-prmary-dark);
+    border-radius: 1.6rem;
+    background-color: var(--color-white);
+    cursor: pointer;
+    color: var(--color-prmary-dark);
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+
+    &:hover {
+      color: #FFFFFF;
+      background-color: #6070FF;
+      box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+      transition: all 0.2s;
+    }
   }
 }
