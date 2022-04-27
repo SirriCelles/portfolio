@@ -202,13 +202,13 @@ p {
     letter-spacing: 0.03em;
     margin: 1.8rem 0; }
     .tonic__btn:visited {
-      background-color: #2230D2;
-      color: #FFFFFF;
-      box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24); }
+      background-color: #2230d2;
+      color: #fff;
+      box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24); }
     .tonic__btn:hover {
-      color: #FFFFFF;
-      background-color: #6070FF;
-      box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+      color: #fff;
+      background-color: #6070ff;
+      box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
       transition: all 0.2s; }
 
 .about {
@@ -363,7 +363,7 @@ footer {
       border: none; }
     .contact__form-input::placeholder {
       font-family: "Poppins", sans-serif;
-      color: #172B4D;
+      color: #172b4d;
       font-size: 1.6rem; }
   .contact__form-textarea {
     width: 32.7rem;
@@ -391,11 +391,11 @@ footer {
     line-height: 2.4rem;
     font-weight: 500;
     letter-spacing: 0.03em;
-    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24); }
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24); }
     .contact__form-button:hover {
-      color: #FFFFFF;
-      background-color: #6070FF;
-      box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+      color: #fff;
+      background-color: #6070ff;
+      box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
       transition: all 0.2s; }
 
 .works {

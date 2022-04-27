@@ -5,7 +5,6 @@
   margin-top: 11.4rem;
   display: grid;
   grid-template-rows: 55.2rem 59.6rem 58.2rem 62rem 126.3rem;
-  
 
   @include breakpoint('mobile') {
     max-width: 37.5rem;
