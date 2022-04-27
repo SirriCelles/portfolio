@@ -233,7 +233,34 @@
       </div>
     </div>
   </div>
-
   <!-- end of works -->
+
+  <!-- Contact Form  -->
+  <footer>
+    <div class="contact">
+      <h2 class="contact__header">Contact me</h2>
+    <p class="contact__text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+    <form action="https://formspree.io/f/mdobpebd" method="post" class="contact__form">
+      <ul class="contact__form-list">
+        <li class="contact__form-list--item">
+          <label for="name"></label>
+          <input type="text" id="name" class="contact__form-input" maxlength="30" placeholder="Full Name" required>
+        </li>
+        <li class="contact__form-list--item">
+          <label for="email"></label>
+          <input type="email" id="email" class="contact__form-input" placeholder="example@gmail.com" required>
+        </li>
+        <li class="contact__form-list--item">
+          <label for="message"></label>
+          <textarea name="message" id="message" cols="30" rows="10" class="contact__form-textarea" maxlength="500" placeholder="write a message here" required></textarea>
+        </li>
+
+        <li class="contact__form-list--item">
+          <button type="submit" class="contact__form-button">Get in touch</button>
+        </li>
+      </ul>
+    </form>
+    </div>
+  </footer>
 </body>
 </html>

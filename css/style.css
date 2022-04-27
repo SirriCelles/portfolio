@@ -141,7 +141,7 @@ p {
   max-width: 29.5rem;
   border-radius: 0.6rem;
   width: 100%;
-  background: url("../img/blog_drbl_4x.webp") no-repeat center center;
+  background: url("../img/Snapshoot Portfolio.png") no-repeat center center;
   background-size: cover;
   margin-bottom: 12px; }
 
@@ -150,7 +150,7 @@ p {
   max-width: 29.5rem;
   border-radius: 0.6rem;
   width: 100%;
-  background: url("../img/works2.png") no-repeat center center;
+  background: url("../img/Snapshoot Portfolio (1).png") no-repeat center center;
   background-size: cover;
   margin-bottom: 12px; }
 
@@ -201,13 +201,20 @@ p {
     font-weight: 600;
     letter-spacing: 0.03em;
     margin: 1.8rem 0; }
+    .tonic__btn:visited {
+      background-color: #2230d2;
+      color: #fff;
+      box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24); }
     .tonic__btn:hover {
-      background-color: var(--color-primary-light-2);
+      color: #fff;
+      background-color: #6070ff;
+      box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
       transition: all 0.2s; }
 
 .about {
   display: flex;
-  border-top-right-radius: 4rem 1rem; }
+  border-top-right-radius: 5rem;
+  clip-path: circle(94% at 27% 67%); }
   @media (max-width: 37.5rem) {
     .about {
       flex-direction: column;
@@ -287,6 +294,109 @@ p {
   border: 1px solid #fff;
   background: url("/img/css3.svg") no-repeat center center;
   background-size: cover; }
+
+footer {
+  width: 37.5rem;
+  background-color: #6070ff;
+  clip-path: circle(90% at 62% 62%);
+  padding: 10.3rem 2.4rem 2.4rem 2.4rem;
+  border-top-left-radius: 9rem;
+  margin-top: -6.7rem;
+  background-image: url("../img/contact-me-shapes.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.contact {
+  width: 100%;
+  height: auto; }
+  .contact__header {
+    margin-bottom: 1.2rem;
+    padding: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: var(--color-white); }
+  .contact__text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #ebebff;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    text-align: center;
+    vertical-align: top; }
+  .contact__form-list {
+    display: flex;
+    list-style: none;
+    margin-top: 8.7rem;
+    flex-direction: column;
+    gap: 2rem;
+    align-content: center;
+    justify-content: center;
+    width: 27.3rem; }
+  .contact__form-list--item {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #172b4d; }
+  .contact__form-input {
+    width: 32.7rem;
+    height: 4.8rem;
+    padding: 2rem 2.4rem;
+    border-radius: 0.8rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #172b4d;
+    border: none; }
+    .contact__form-input:focus {
+      outline: none;
+      border: none; }
+    .contact__form-input::placeholder {
+      font-family: "Poppins", sans-serif;
+      color: #172b4d;
+      font-size: 1.6rem; }
+  .contact__form-textarea {
+    width: 32.7rem;
+    padding: 2rem 2.4rem;
+    border-radius: 0.8rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #172b4d;
+    border: none;
+    height: auto; }
+    .contact__form-textarea:focus {
+      outline: none;
+      border: none;
+      font-size: 1.5rem;
+      font-family: "Poppins", sans-serif; }
+  .contact__form-button {
+    padding: 1.6rem 1.2rem;
+    border: 1px solid var(--color-prmary-dark);
+    border-radius: 1.6rem;
+    background-color: var(--color-white);
+    cursor: pointer;
+    color: var(--color-prmary-dark);
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24); }
+    .contact__form-button:hover {
+      color: #fff;
+      background-color: #6070ff;
+      box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+      transition: all 0.2s; }
 
 .works {
   margin-top: 11.4rem;
