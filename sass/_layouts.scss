@@ -2,7 +2,7 @@
 // WORKS LAYOUT
 
 .works {
-  margin-top: 11.4rem;
+  margin-top: 14.2rem;
   display: grid;
   width: 100%;
   grid-row-gap: 14.2rem;
@@ -10,6 +10,7 @@
   justify-items: center;
 
   @include xm {
+    margin-top: 11.2rem;
     grid-row-gap: 7rem;
     max-width: 37.5rem;
     width: 100%;
@@ -21,7 +22,6 @@
   }
 
   .work {
-    max-width: 115.6rem;
     width: 100%;
     border: 1px solid var(--color-border);
     border-radius: 2.4rem;
