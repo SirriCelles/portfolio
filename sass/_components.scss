@@ -3,11 +3,22 @@
 
 .landing-page {
   background-color: var(--color-white);
-
+  border-bottom-left-radius: 9.5rem;
+  width: 100%;
+  height: 86.6rem;
   @include xm {
     height: 66.8rem;
     max-width: 37.5rem;
     width: 100%;
+    border-bottom-left-radius: 4rem 3.5rem;
+  }
+
+  @include lg {
+    height: 74rem;
+  }
+
+  @include xl {
+    border-bottom-left-radius: 19.5rem;
   }
 
 }
@@ -15,63 +26,159 @@
 .nav {
   padding: 2.4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  max-height: 11.8rem;
+
+  @include xm {
+    padding: 2.4rem;
+  }
 
   &__logo {
     font-size: 1.8rem;
     font-weight: 700;
+    line-height: 2rem;
     color: var(--color-primary);
     text-transform: capitalize;
     text-align: center;
 
     @include xm {
-      line-height: 2rem;
       width: 7.6rem;
       height: 2rem;
     }
   }
 
-  &__menu-box {
-    flex: 0 0 2rem;
+
+  &__menu-line{
+    display: none;
+    @include xm {
+      display: block;
+      flex: 0 0 2rem;
+    }
   }
 
   &__menu {
-    width: 100%;
-    // border: 1.2px solid #ACB7C3;
-    border: 1px solid var(--color-primary);
-    margin: 0.4rem 0;
+    display: none;
+    @include xm {
+      display: block;
+      width: 100%;
+      // border: 1.2px solid #ACB7C3;
+      border: 1px solid var(--color-primary);
+      margin: 0.4rem 0;
+    }
+  }
+
+  &__menu-box {
+    @include xm {
+      display: none;
+    }
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu-item {
+    a{
+      text-decoration: none;
+      margin: 0 1rem;
+      color: var(--color-text);
+      text-transform: capitalize;
+      font-weight: 500;
+      line-height: 2rem;
+      font-size: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+    }
   }
 }
 
 .landing {
-  max-width: 40.2rem;
-  max-height: 61.3rem;
-  padding-bottom: 2rem;
   background-color: var(--color-white);
-  border-bottom-left-radius: 4rem 3.5rem;
+  @include xm {
+    max-width: 40.2rem;
+    max-height: 61.3rem;
+    padding-bottom: 2rem;
+  }
+
+  @include lg {
+    max-width: 99.2rem;
+    max-height: 63rem;
+  }
 
   &__wrapper {
     width: 100%;
-    height: 58.7rem;
-    background-image: url("../img/header-shapes\ mobile@2x.svg");
+    height: 72.1rem;
+    background-image: url("../img/Header\ bg.svg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     padding: 0 2.4rem;
-    margin-bottom: 2.6rem;
+    position: relative;
+
+    @include xm {
+      max-width: 37.5rem;
+      width: 100%;
+      height: 58.7rem;
+      background-image: url("../img/header-shapes\ mobile@2x.svg");
+      background-position: center center;
+      margin-bottom: 2.6rem;
+    }
+
+    @include lg {
+      height: 61rem;
+    }
+
+  }
+
+  &__second-wrapper{
+    max-width: 65%;
+    position: absolute;
+    top: 38%;
+    left: 13%;
+    margin: 1.2rem;
+    @include xm{
+      max-width: 37.5rem;
+      top: 14%;
+      left: 0;
+    }
+    @include sm {
+      top: 11%;
+      left: 10%;
+    }
+
+    @include md {
+      top: 23%;
+      left: 10%;
+    }
+
+    @include lg {
+      top: 24%;
+      left: 10%;
+    }
+
+
   }
 
   &__header {
-    padding-top: 10.6rem;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.37px;
     margin: 1.2rem 0;
+    @include xm {
+      letter-spacing: 0;
+     }
   }
 
   &__text {
     margin: 1.2rem 0;
+   @include xm {
+    margin: 1.2rem 1.2rem;
+
+   }
   }
 
   &__link {
@@ -85,6 +192,9 @@
 
   &__social-media {
     margin: 1.2rem 0;
+    @include xm {
+      margin: 1.2rem 1.2rem;
+     }
 
     ul {
       list-style: none;
@@ -105,10 +215,15 @@
 /////////
 // HEADER
 .header {
-  font-size: 4rem;
   font-weight: 700;
-  line-height: 5.2rem;
+  font-size: 4.8rem;
+  line-height: 6rem;
   color: var(--color-header-text);
+
+  @include xm {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
 
   &__about {
     @include xm {
@@ -124,7 +239,7 @@
 .tonic-1 {
   &__image-holder {
     height: 22rem;
-    max-width: 29.5rem;
+    // max-width: 29.5rem;
     border-radius: 0.6rem;
     width: 100%;
     background: url("../img/blog_drbl_4x.webp") no-repeat center center;
@@ -252,6 +367,8 @@
 ////////////
 // ABOUT
 .about {
+  border-radius: 1.6rem;
+  padding: 1.6rem;
   display: flex;
   border-top-right-radius: 5rem;
   clip-path: circle(94% at 27% 67%);

@@ -5,17 +5,15 @@
   margin-top: 11.4rem;
   display: grid;
   width: 100%;
-  grid-row-gap: 7rem;
+  grid-row-gap: 14.2rem;
   grid-template-rows: 49.6rem 49.6rem 49.6rem 49.6rem;
+  justify-items: center;
 
   @include xm {
+    grid-row-gap: 7rem;
     max-width: 37.5rem;
     width: 100%;
     grid-template-rows: 55.2rem 59.6rem 58.2rem 62rem;
-  }
-
-  @include xl {
-    min-width: 144rem;
   }
 
   & > * {
@@ -23,8 +21,13 @@
   }
 
   .work {
+    max-width: 115.6rem;
+    width: 100%;
     border: 1px solid var(--color-border);
-    border-radius: 1.6rem;
+    border-radius: 2.4rem;
     padding: 1.6rem;
+    @include xm {
+      border-radius: 1.6rem;
+    }
   }
 }
