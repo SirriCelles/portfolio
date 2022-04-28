@@ -4,7 +4,7 @@
 .landing-page {
   background-color: var(--color-white);
 
-  @include breakpoint("mobile") {
+  @include xm {
     height: 66.8rem;
     max-width: 37.5rem;
     width: 100%;
@@ -24,7 +24,7 @@
     text-transform: capitalize;
     text-align: center;
 
-    @include breakpoint("mobile") {
+    @include xm {
       line-height: 2rem;
       width: 7.6rem;
       height: 2rem;
@@ -110,7 +110,7 @@
   color: var(--color-header-text);
 
   &__about {
-    @include breakpoint("mobile") {
+    @include xm {
       display: flex;
       flex-direction: column;
       margin-bottom: 1.2rem;
@@ -172,7 +172,7 @@
   display: flex;
   margin: 0 2.4rem;
 
-  @include breakpoint("mobile") {
+  @include xm {
     flex-direction: column;
     max-width: 32.7rem;
     width: 100%;
@@ -255,7 +255,7 @@
   border-top-right-radius: 5rem;
   clip-path: circle(94% at 27% 67%);
 
-  @include breakpoint("mobile") {
+  @include xm {
     flex-direction: column;
     max-width: 37.5rem;
     width: 100%;
@@ -307,7 +307,7 @@
     background-color: #f7f7f9;
     margin: 1.2rem 0;
 
-    @include breakpoint("mobile") {
+    @include xm {
       width: 30.3rem;
     }
   }
