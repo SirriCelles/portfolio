@@ -4,14 +4,19 @@
 .works {
   margin-top: 11.4rem;
   display: grid;
-  grid-template-rows: 55.2rem 59.6rem 58.2rem 62rem 126.3rem;
+  width: 100%;
+  grid-row-gap: 7rem;
+  grid-template-rows: 49.6rem 49.6rem 49.6rem 49.6rem;
 
   @include xm {
     max-width: 37.5rem;
     width: 100%;
+    grid-template-rows: 55.2rem 59.6rem 58.2rem 62rem;
   }
 
-  grid-row-gap: 7rem;
+  @include xl {
+    min-width: 144rem;
+  }
 
   & > * {
     background-color: var(--color-white);
