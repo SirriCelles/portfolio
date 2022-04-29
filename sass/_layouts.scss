@@ -2,19 +2,32 @@
 // WORKS LAYOUT
 
 .works {
-  margin-top: 14.2rem;
+  margin-top: 7rem;
   display: grid;
   width: 100%;
-  grid-row-gap: 14.2rem;
-  grid-template-rows: 49.6rem 49.6rem 49.6rem 49.6rem;
+  grid-template-rows: 55.2rem 59.6rem 58.2rem 62rem;
+  grid-row-gap: 7rem;
   justify-items: center;
 
+  @include lg {
+    margin-top: 14.2rem;
+    grid-template-rows: 49.6rem 49.6rem 49.6rem 49.6rem;
+    grid-row-gap: 14.2rem;
+
+  }
+
+  @include xl {
+    margin-top: 14.2rem;
+    grid-template-rows: 49.6rem 49.6rem 49.6rem 49.6rem;
+    grid-row-gap: 14.2rem;
+
+  }
+
   @include xm {
-    margin-top: 11.2rem;
+    grid-template-rows: 55.2rem 59.6rem 58.2rem 62rem;
     grid-row-gap: 7rem;
     max-width: 37.5rem;
     width: 100%;
-    grid-template-rows: 55.2rem 59.6rem 58.2rem 62rem;
   }
 
   & > * {

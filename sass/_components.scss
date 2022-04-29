@@ -8,9 +8,8 @@
   height: 86.6rem;
   @include xm {
     height: 66.8rem;
-    max-width: 37.5rem;
+    // max-width: 37.5rem;
     width: 100%;
-    border-bottom-left-radius: 4rem 3.5rem;
   }
 
   @include lg {
@@ -146,7 +145,7 @@
     @include xm{
       max-width: 37.5rem;
       top: 14%;
-      left: 17%;
+      left: 2%;
     }
     @include sm {
       top: 11%;
@@ -170,7 +169,7 @@
     letter-spacing: 0.37px;
     margin: 1.2rem 0;
     @include xm {
-      margin: 1.2rem 1.2rem;
+      margin: 4rem 1.2rem 1.2rem 1.2rem;
       letter-spacing: 0;
      }
   }
@@ -239,28 +238,57 @@
 //WORKS
 .tonic {
   display: flex;
-  gap: 2.2rem;
-  max-width: 80%;
-  margin-left: 14.2rem;
-  margin-right: 15.2rem;
+  flex-direction: column;
+  max-width: 85%;
+  margin-left: 8.8rem;
+  margin-right: 8.2rem;
+  padding: 1.6rem;
 
   @include xm{
-    flex-direction: column;
-    max-width: 28rem;
-    margin-left: 8.8rem;
-    margin-right: 8.2rem;
+    // max-width: 28rem;
+    margin-left: 2.4rem;
+  margin-right: 2.4rem;
     gap: 0;
   }
 
+  @include sm {
+    margin-left: 7.8rem;
+  }
+
+  @include lg {
+    max-width: 90%;
+    flex-direction: row;
+    gap: 2.2rem;
+    margin-left: 8.8rem;
+    margin-right: 8.2rem;
+  }
+
+  @include xl {
+    flex-direction: row;
+    max-width: 80%;
+    gap: 2.2rem;
+    margin-left: 14.2rem;
+    margin-right: 15.2rem;
+  }
+
   &__wrapper {
+   @include lg {
     margin-left: 4.8rem;
     margin-right: 4.6rem;
+   }
+
+   @include xl {
+    margin-left: 4.8rem;
+    margin-right: 4.6rem;
+   }
 
     & > * {
-      line-height: 4rem;
+      @include lg {
+        line-height: 4rem;
+      }
 
-      @include xm {
-        line-height: 2.4rem;
+      @include xl {
+        line-height: 4rem;
       }
     }
 
@@ -270,10 +298,17 @@
   }
 
   &__header {
-    margin-top: 4.8rem;
-    margin-bottom: 2rem;
     @include xm {
       margin: 1.2rem;
+    }
+
+    @include lg {
+      margin-top: 4.8rem;
+      margin-bottom: 2rem;
+    }
+    @include xl {
+      margin-top: 4.8rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -304,10 +339,17 @@
   &__text {
     font-size: 1.6rem;
     line-height: 2.4rem;
-    margin-top: .8rem;
     @include xm {
       font-size: 1.5rem;
       margin-top: .2rem;
+    }
+
+    @include lg {
+      margin-top: .8rem;
+    }
+
+    @include xl {
+      margin-top: .8rem;
     }
   }
 
@@ -315,12 +357,20 @@
     list-style: none;
     display: flex;
     gap: 0.8rem;
-    margin-top: 2.2rem;
-    margin-bottom: 2.2rem;
+    margin-top: 1.2rem;
 
     @include xm {
       margin-top: 1.2rem;
       margin-bottom: 0;
+    }
+
+    @include lg {
+      margin-top: 2.2rem;
+      margin-bottom: 2.2rem;
+    }
+    @include xl {
+      margin-top: 2.2rem;
+      margin-bottom: 2.2rem;
     }
   }
 
@@ -365,25 +415,33 @@
 
 .tonic-1 {
   &__image-holder {
-    height: 44.8rem;
-    max-width: 54.4rem;
-    border-radius: 0.8rem;
+    max-width: 54rem;
+    height: 22rem;
+    border-radius: 0.6rem;
     width: 100%;
     background: url("../img/Snapshoot\ Portfolio-mbile.png") no-repeat center center;
     background-size: cover;
     margin-bottom: 12px;
     padding: 2.4rem;
     @include xm {
-      max-width: 29.5rem;
-      height: 22rem;
-      border-radius: 0.6rem;
       background: url("../img/blog_drbl_4x.webp") no-repeat center center;
+    }
+
+    @include lg {
+      height: 44.8rem;
+      max-width: 54.4rem;
+      border-radius: 0.8rem;
+    }
+
+    @include xl {
+      height: 44.8rem;
+      max-width: 54.4rem;
+      border-radius: 0.8rem;
     }
   }
 }
 
 .tonic-2 {
-  flex-direction: row-reverse;
   &__image-holder {
     height: 44.8rem;
     max-width: 54.4rem;
@@ -400,6 +458,15 @@
       height: 22rem;
       background: url("../img/works2.png") no-repeat center center;
     }
+
+    @include lg {
+      flex-direction: row-reverse;
+    }
+
+    @include xl {
+      flex-direction: row-reverse;
+    }
+
   }
 }
 
@@ -423,7 +490,6 @@
 }
 
 .tonic-4 {
-  flex-direction: row-reverse;
   &__image-holder {
     height: 44.8rem;
     max-width: 54.4rem;
@@ -440,47 +506,93 @@
       border-radius: 0.6rem;
       background: url("../img/Snapshoot\ Portfolio\ \(1\).png") no-repeat center center;
     }
+    @include lg {
+      flex-direction: row-reverse;
+    }
+
+    @include xl {
+      flex-direction: row-reverse;
+    }
   }
 }
 
 ////////////
 // ABOUT
 .about {
-  margin: 14.2rem 0rem 0 0rem;
+  margin: 11.4rem 0rem 0 0rem;
   width: 100%;
-  height: 86rem;
   border-radius: 1.6rem;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   border-top-right-radius: 11rem;
   // clip-path: circle(94% at 27% 67%);
   background-color: var(--color-white);
+  height: 126.2rem;
 
   @include xm {
-    flex-direction: column;
-    max-width: 37.5rem;
+    // max-width: 37.5rem;
+    height: 122rem;
     width: 100%;
+    border-top-right-radius: 9rem;
+  }
+
+  @include sm {
+    height: 134rem;
+  }
+
+  @include lg {
+    margin: 14.2rem 0rem 0 0rem;
+    flex-direction: row;
+    height: 86rem;
+  }
+  @include xl {
+    margin: 14.2rem 0rem 0 0rem;
+    flex-direction: row;
+    height: 86rem;
   }
 
   &__landing {
-    margin: 14.2rem 1.85rem 0 14.2rem;
+    margin: 7.4rem 1.85rem 0 3.2rem;
     padding: 2.4rem;
     flex-basis: 40%;
     @include xm {
+      margin: 6.4rem 0 0 0;
       max-width: 37.5;
       width: 100%;
-      margin: 0 2.4rem;
+      padding: 0 2.4rem;
+    }
+
+    @include lg {
+      margin: 14.2rem 1.85rem 0 3.2rem;
+    }
+
+    @include xl {
+      margin: 14.2rem 1.85rem 0 14.2rem;
     }
   }
 }
 
 .skills {
   flex-basis: 60%;
-  margin: 14.2rem 14.2rem 0 1.85rem;
+  margin: 2.2rem .2rem 0 1.85rem;
+  @include xm {
+    margin: 0;
+  }
+
+  @include xl {
+    margin: 14.2rem 14.2rem 0 1.85rem;
+  }
+  @include lg {
+    margin: 14.2rem .2rem 0 1.85rem;
+  }
   &__list {
     list-style: none;
     margin: 0 3.6rem;
+    @include xm {
+      margin: 0 2.4rem;
+    }
   }
 
   &__list-item {
@@ -596,23 +708,20 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   @include xm {
-    max-width: 37.5rem;
+
   }
 }
 
 .contact {
   width: 100%;
   height: auto;
- @include xl {
-   max-width: 80.1rem;
-   width: 100%;
-   margin: auto 49.6rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ @include xm {
+  max-width: 27rem;
  }
 
   &__header {
@@ -637,6 +746,10 @@ footer {
     text-align: center;
     vertical-align: top;
 
+    @include lg {
+      max-width: 56.6rem;
+      width: 100%;
+    }
     @include xl {
       max-width: 56.6rem;
       width: 100%;
