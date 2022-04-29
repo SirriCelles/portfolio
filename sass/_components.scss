@@ -813,7 +813,6 @@ footer {
     color: #172b4d;
     border: none;
 
-
     @include xm {
       max-width: 32.7rem;
     }
@@ -841,6 +840,7 @@ footer {
     color: #172b4d;
     border: none;
     height: auto;
+
     @include xl {
       max-width: 44.7rem;
     }
