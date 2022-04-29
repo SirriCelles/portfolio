@@ -552,21 +552,21 @@ p {
     height: 4.8rem;
     border-radius: 50%;
     border: 1px solid #fff;
-    background: url("/img/javascript.svg") no-repeat center center;
+    background: url("../img/javascript.svg") no-repeat center center;
     background-size: cover; }
   .skills__lang-list--iconht {
     width: 4.8rem;
     height: 4.8rem;
     border-radius: 50%;
     border: 1px solid #fff;
-    background: url("/img/html.svg") no-repeat center center;
+    background: url("../img/html.svg") no-repeat center center;
     background-size: cover; }
   .skills__lang-list--iconcs {
     width: 4.8rem;
     height: 4.8rem;
     border-radius: 50%;
     border: 1px solid #fff;
-    background: url("/img/css3.svg") no-repeat center center;
+    background: url("../img/css3.svg") no-repeat center center;
     background-size: cover; }
 
 footer {
@@ -634,7 +634,7 @@ footer {
     width: 100%; }
     @media (max-width: 375px) {
       .contact__form-list {
-        width: 27.3rem; } }
+        max-width: 27.3rem; } }
   .contact__form-list--item {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -655,7 +655,7 @@ footer {
     border: none; }
     @media (max-width: 375px) {
       .contact__form-input {
-        width: 32.7rem; } }
+        max-width: 32.7rem; } }
     .contact__form-input:focus {
       outline: none;
       border: none; }
@@ -664,7 +664,8 @@ footer {
       color: #172b4d;
       font-size: 1.6rem; }
   .contact__form-textarea {
-    width: 32.7rem;
+    max-width: 44.7rem;
+    width: 100%;
     padding: 2rem 2.4rem;
     border-radius: 0.8rem;
     font-size: 1.7rem;
@@ -673,17 +674,14 @@ footer {
     color: #172b4d;
     border: none;
     height: auto; }
+    @media (min-width: 992px) {
+      .contact__form-textarea {
+        max-width: 44.7rem; } }
     .contact__form-textarea:focus {
       outline: none;
       border: none;
       font-size: 1.5rem;
       font-family: "Poppins", sans-serif; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .contact__form-textarea {
-        width: 44.7rem; } }
-    @media (min-width: 992px) {
-      .contact__form-textarea {
-        width: 44.7rem; } }
   .contact__form-button {
     padding: 1.6rem 1.2rem;
     border: 1px solid var(--color-prmary-dark);

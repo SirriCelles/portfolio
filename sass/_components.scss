@@ -681,7 +681,7 @@
     height: 4.8rem;
     border-radius: 50%;
     border: 1px solid #fff;
-    background: url("/img/javascript.svg") no-repeat center center;
+    background: url("../img/javascript.svg") no-repeat center center;
     background-size: cover;
   }
 
@@ -690,7 +690,7 @@
     height: 4.8rem;
     border-radius: 50%;
     border: 1px solid #fff;
-    background: url("/img/html.svg") no-repeat center center;
+    background: url("../img/html.svg") no-repeat center center;
     background-size: cover;
   }
 
@@ -699,7 +699,7 @@
     height: 4.8rem;
     border-radius: 50%;
     border: 1px solid #fff;
-    background: url("/img/css3.svg") no-repeat center center;
+    background: url("../img/css3.svg") no-repeat center center;
     background-size: cover;
   }
 }
@@ -782,7 +782,7 @@ footer {
     width: 100%;
 
     @include xm {
-      width: 27.3rem;
+      max-width: 27.3rem;
     }
   }
 
@@ -809,7 +809,7 @@ footer {
 
 
     @include xm {
-      width: 32.7rem;
+      max-width: 32.7rem;
     }
 
     &:focus {
@@ -825,7 +825,8 @@ footer {
   }
 
   &__form-textarea {
-    width: 32.7rem;
+    max-width: 44.7rem;
+    width: 100%;
     padding: 2rem 2.4rem;
     border-radius: 0.8rem;
     font-size: 1.7rem;
@@ -834,20 +835,15 @@ footer {
     color: #172b4d;
     border: none;
     height: auto;
+    @include xl {
+      max-width: 44.7rem;
+    }
 
     &:focus {
       outline: none;
       border: none;
       font-size: 1.5rem;
       font-family: "Poppins", sans-serif;
-    }
-
-    @include lg {
-      width: 44.7rem;
-    }
-
-    @include xl {
-    width: 44.7rem;
     }
   }
 
