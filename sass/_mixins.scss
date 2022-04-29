@@ -23,7 +23,6 @@ $breakpoints: (
   }
 }
 
-
 // Media quesries implimentation two
 $screen-xm-min: 375px;
 
@@ -35,12 +34,10 @@ $screen-lg-min: 992px;
 
 $screen-xl-min: 1567px;
 
-
 @mixin xm {
   @media (max-width: #{$screen-xm-min}) {
     @content;
   }
-
 }
 
 @mixin sm {
@@ -62,7 +59,7 @@ $screen-xl-min: 1567px;
 }
 
 @mixin xl {
-  @media (min-width: #{$screen-lg-min}){
+  @media (min-width: #{$screen-lg-min}) {
     @content;
   }
 }

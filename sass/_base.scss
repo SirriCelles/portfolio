@@ -2,7 +2,7 @@
 // css variables
 :root {
   --color-white: #fff;
-  --color-background: #E5E5E5; 
+  --color-background: #e5e5e5;
   --color-primary: #6070ff;
   --color-prmary-dark: #396df2;
   --color-primary-light-1: #cbcdff;
@@ -41,9 +41,9 @@ p {
   line-height: 2.8rem;
   font-size: 2rem;
   color: var(--color-text);
+
   @include xm {
     font-size: 1.6rem;
     line-height: 2.4rem;
-
   }
 }
