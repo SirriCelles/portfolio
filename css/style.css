@@ -81,6 +81,10 @@ p {
         width: 7.6rem;
         height: 2rem;
         margin-left: 6.4rem; } }
+    .nav__logo a {
+      text-decoration: none;
+      cursor: pointer;
+      color: inherit; }
   .nav__menu-line {
     display: none; }
     @media (max-width: 375px) {
