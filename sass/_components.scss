@@ -69,6 +69,11 @@
       display: block;
       flex: 0 0 2rem;
     }
+
+    @include sm {
+      display: block;
+      flex: 0 0 2rem;
+    }
   }
 
   &__menu {
@@ -81,10 +86,22 @@
       border: 1px solid var(--color-primary);
       margin: 0.4rem 0;
     }
+
+    @include sm {
+      display: block;
+      width: 100%;
+      // border: 1.2px solid #ACB7C3;
+      border: 1px solid var(--color-primary);
+      margin: 0.4rem 0;
+    }
   }
 
   &__menu-box {
     @include xm {
+      display: none;
+    }
+
+    @include sm {
       display: none;
     }
 

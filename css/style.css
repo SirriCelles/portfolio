@@ -97,9 +97,19 @@ p {
       .nav__menu-line {
         display: block;
         flex: 0 0 2rem; } }
+    @media (min-width: 376px) and (max-width: 575px) {
+      .nav__menu-line {
+        display: block;
+        flex: 0 0 2rem; } }
   .nav__menu {
     display: none; }
     @media (max-width: 375px) {
+      .nav__menu {
+        display: block;
+        width: 100%;
+        border: 1px solid var(--color-primary);
+        margin: 0.4rem 0; } }
+    @media (min-width: 376px) and (max-width: 575px) {
       .nav__menu {
         display: block;
         width: 100%;
@@ -111,6 +121,9 @@ p {
     justify-content: space-between;
     align-items: center; }
     @media (max-width: 375px) {
+      .nav__menu-box {
+        display: none; } }
+    @media (min-width: 376px) and (max-width: 575px) {
       .nav__menu-box {
         display: none; } }
   .nav__menu-item a {
