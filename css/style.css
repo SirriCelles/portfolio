@@ -30,6 +30,9 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   line-height: 2.4rem; }
+  @media (max-width: 375px) {
+    body {
+      font-size: 1.2rem; } }
 
 p {
   line-height: 2.8rem;
