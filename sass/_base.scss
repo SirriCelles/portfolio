@@ -14,31 +14,6 @@
   --color-primary-text: #7f8cff;
 }
 
-// screen sizes
-$breakpoints: (
-  'desktop': (min-width: 70em),
-  'laptop': (min-width: 64em),
-  'tablet': (min-width: 50em),
-  'phablet': (min-width: 37.5em),
-  'mobile': (max-width: 37.5rem)
-) !default;
-
-////Mixins for responsive breakpoints
-@mixin breakpoint($breakpoint) {
-  //if breakpoint exist
-  @if map-has-key($map: $breakpoints, $key: $breakpoint) {
-    // display media query based on value
-    @media #{inspect(map-get($breakpoints, $breakpoint))} {
-      @content;
-    }
-  }
-
-  //if map doesnot have breakpoint
-  @else {
-    @warn "Sorry, no value could be retrieved from `#{$breakpoint}`." + "Available breakpoints are: `#{map-keys($breakpoints)}`.";
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -56,13 +31,23 @@ html {
 
 body {
   background-color: var(--color-background);
-  font-size: 1.6rem;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
   line-height: 2.4rem;
+
+  @include xm {
+    font-size: 1.2rem;
+  }
 }
 
 p {
-  line-height: 2.4rem;
+  line-height: 2.8rem;
+  font-size: 2rem;
   color: var(--color-text);
+
+  @include xm {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }

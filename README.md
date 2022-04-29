@@ -1,6 +1,6 @@
 # Project Name
 
-> Portfolio: setup and mobile version skeleton
+> Portfolio: User Portfolio Project
 
 
 ## Built With
