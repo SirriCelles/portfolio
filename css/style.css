@@ -59,6 +59,12 @@ p {
     .landing-page {
       border-bottom-left-radius: 10.5rem; } }
 
+@keyframes rotate-logo {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(360deg); } }
+
 .nav {
   padding: 2.4rem;
   display: flex;
@@ -81,7 +87,8 @@ p {
     line-height: 2rem;
     color: var(--color-primary);
     text-transform: capitalize;
-    text-align: center; }
+    text-align: center;
+    animation: rotate-logo 2s ease-in-out 1s; }
     @media (max-width: 375px) {
       .nav__logo {
         width: 7.6rem;
@@ -653,6 +660,9 @@ footer {
       .contact__text {
         max-width: 56.6rem;
         width: 100%; } }
+    .contact__text:hover {
+      transform: translate(1rem, 1rem);
+      transition: all .2s ease-in; }
   .contact__form {
     text-align: center; }
   .contact__form-list {

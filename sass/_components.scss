@@ -21,6 +21,15 @@
   }
 }
 
+@keyframes rotate-logo {
+  from{
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .nav {
   padding: 2.4rem;
   display: flex;
@@ -48,6 +57,7 @@
     color: var(--color-primary);
     text-transform: capitalize;
     text-align: center;
+    animation: rotate-logo 2s ease-in-out 1s;
 
     @include xm {
       width: 7.6rem;
@@ -820,6 +830,11 @@ footer {
       max-width: 56.6rem;
       width: 100%;
     }
+
+    &:hover {
+      transform: translate(1rem, 1rem);
+      transition: all .2s ease-in;
+    }
   }
 
   &__form {
@@ -923,3 +938,4 @@ footer {
     }
   }
 }
+
