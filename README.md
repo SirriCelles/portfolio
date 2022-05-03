@@ -9,6 +9,12 @@
 - CSS
 - SCSS
 
+## Live Demo ()
+
+This is hosted on the live demo link below.
+
+[Live Demo Link](https://sirricelles.github.io/portfolio/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
