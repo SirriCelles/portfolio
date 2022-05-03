@@ -106,8 +106,7 @@ p {
     @media (max-width: 375px) {
       .nav__logo {
         width: 7.6rem;
-        height: 2rem;
-        margin-left: 6.4rem; } }
+        height: 2rem; } }
     .nav__logo a {
       text-decoration: none;
       cursor: pointer;
@@ -501,7 +500,7 @@ p {
     .about {
       height: 125rem;
       width: 100%;
-      border-top-right-radius: 9rem; } }
+      border-top-right-radius: 8rem; } }
   @media (min-width: 376px) and (max-width: 575px) {
     .about {
       height: 130rem; } }
