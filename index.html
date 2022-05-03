@@ -1,288 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="landing-page">
+      <header>
+        <nav class="nav">
+          <div class="nav__logo">
+            <a href="#" rel="noopener noreferrer">my logo</a>
+          </div>
+          <div class="nav__menu-line">
+            <div class="nav__menu"></div>
+            <div class="nav__menu"></div>
+            <div class="nav__menu"></div>
+          </div>
 
-  <div class="landing-page">
-    <header>
-      <nav class="nav">
-        <div class="nav__logo"><a href="#" rel="noopener noreferrer">my logo</a></div>
-        <div class="nav__menu-line">
-          <div class="nav__menu"></div>
-          <div class="nav__menu"></div>
-          <div class="nav__menu"></div>
-        </div>
-
-        <ul class="nav__menu-box">
-          <li class="nav__menu-item">
-            <a href="#portfolio-id">Portfolio</a>
-          </li>
-          <li class="nav__menu-item">
-            <a href="#about-id">About</a>
-          </li>
-          <li class="nav__menu-item">
-            <a href="#contact-id">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- landing page -->
-    <section class="landing">
-      <div class="landing__wrapper">
-        <div class="landing__second-wrapper">
-          <h2 class="landing__header header">
-            <span>I'm Sirri</span>
-            <span>Glad to see you!</span>
-
-          </h2>
+          <ul class="nav__menu-box">
+            <li class="nav__menu-item">
+              <a href="#portfolio-id">Portfolio</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#about-id">About</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#contact-id">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- landing page -->
+      <section class="landing">
+        <div class="landing__wrapper">
+          <div class="landing__second-wrapper">
+            <h2 class="landing__header header">
+              <span>I'm Sirri</span>
+              <span>Glad to see you!</span>
+            </h2>
             <p class="landing__text">
-              I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
+              I'm a software developer! I can help you build a product , feature
+              or website Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don't
+              hestiate to contact me.
             </p>
-            <div><a href="#" class="landing__link">
-             let's connect
-            </a></div>
+            <div><a href="#" class="landing__link"> let's connect </a></div>
             <div class="landing__social-media">
               <ul>
-                <li><a href="https://twitter.com/SirriCelles?t=fZl0blItFUQDC5vozH47nA&s=09">
-                <object  class="landing__icon" data="./img/twitter.svg" height="20" width="20"></object>
-                </a></li>
-                <li><a href="https://www.linkedin.com/in/sirri-celles-959a4a1aa">
-                  <object class="landing__icon" data="./img/Linkedin_icon.svg" height="20" width="20"></object>
-                </a></li>
-                <li><a href="#">
-                  <object class="landing__icon" data="./img/medium.svg" height="20" width="20"></object>
-                </a></li>
-                <li><a href="https://github.com/SirriCelles">
-                  <object class="landing__icon" data="./img/github.svg" height="20" width="20"></object>
-                </a></li>
-                <li><a href="#">
-                  <object class="landing__icon" data="./img/hands.svg" height="20" width="20"></object>
-                </a></li>
+                <li>
+                  <a
+                    href="https://twitter.com/SirriCelles?t=fZl0blItFUQDC5vozH47nA&s=09"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="landing__icon"
+                  >
+                    <img src="./img/twitter.svg" alt="Twitter_icon" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/sirri-celles-959a4a1aa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="landing__icon"
+                  >
+                    <img src="./img/Linkedin_icon.svg" alt="Linkedin_icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="landing__icon">
+                    <img src="./img/medium.svg" alt="medium_icon" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/SirriCelles"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="landing__icon"
+                  >
+                  <img src="./img/github.svg" alt="github_icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="landing__icon">
+                    <img src="./img/hands.svg" alt="hands_icon" />
+                  </a>
+                </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- works -->
+    <section class="works" id="portfolio-id">
+      <div class="work tonic-1 tonic">
+        <div class="tonic-1__image-holder"></div>
+        <div class="tonic__wrapper">
+          <h2 class="header tonic__header">Tonic</h2>
+          <ul class="tonic__cat-list">
+            <li class="tonic__cat-list--1 tonic__cat-list--item">CANOPY</li>
+            <li class="tonic__cat-list--item">Back end dev</li>
+            <li class="tonic__cat-list--item">2015</li>
+          </ul>
+          <p class="tonic__text">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="tonic__lang-list">
+            <li class="tonic__lang-list--item"><a href="#">html</a></li>
+            <li class="tonic__lang-list--item"><a href="#">css</a></li>
+            <li class="tonic__lang-list--item"><a href="#">javascript</a></li>
+          </ul>
+          <button class="tonic__btn" type="button">See Project</button>
+        </div>
+      </div>
+
+      <div class="work tonic-2 tonic">
+        <div class="tonic-2__image-holder"></div>
+        <div class="tonic__wrapper">
+          <h2 class="header tonic__header">Multi-Post Stories</h2>
+          <ul class="tonic__cat-list">
+            <li class="tonic__cat-list--1 tonic__cat-list--item">CANOPY</li>
+            <li class="tonic__cat-list--item">Back end dev</li>
+            <li class="tonic__cat-list--item">2015</li>
+          </ul>
+          <p class="tonic__text">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="tonic__lang-list">
+            <li class="tonic__lang-list--item"><a href="#">html</a></li>
+            <li class="tonic__lang-list--item"><a href="#">css</a></li>
+            <li class="tonic__lang-list--item"><a href="#">javascript</a></li>
+          </ul>
+          <button class="tonic__btn" type="button">See Project</button>
+        </div>
+      </div>
+
+      <div class="work tonic-3 tonic">
+        <div class="tonic-3__image-holder"></div>
+        <div class="tonic__wrapper">
+          <h2 class="header tonic__header">Tonic</h2>
+          <ul class="tonic__cat-list">
+            <li class="tonic__cat-list--1 tonic__cat-list--item">CANOPY</li>
+            <li class="tonic__cat-list--item">Back end dev</li>
+            <li class="tonic__cat-list--item">2015</li>
+          </ul>
+          <p class="tonic__text">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="tonic__lang-list">
+            <li class="tonic__lang-list--item"><a href="#">html</a></li>
+            <li class="tonic__lang-list--item"><a href="#">css</a></li>
+            <li class="tonic__lang-list--item"><a href="#">javascript</a></li>
+          </ul>
+          <button class="tonic__btn" type="button">See Project</button>
+        </div>
+      </div>
+
+      <div class="work tonic-4 tonic">
+        <div class="tonic-4__image-holder"></div>
+        <div class="tonic__wrapper">
+          <h2 class="header tonic__header">Multi-Post Stories</h2>
+          <ul class="tonic__cat-list">
+            <li class="tonic__cat-list--1 tonic__cat-list--item">CANOPY</li>
+            <li class="tonic__cat-list--item">Back end dev</li>
+            <li class="tonic__cat-list--item">2015</li>
+          </ul>
+          <p class="tonic__text">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="tonic__lang-list">
+            <li class="tonic__lang-list--item"><a href="#">html</a></li>
+            <li class="tonic__lang-list--item"><a href="#">css</a></li>
+            <li class="tonic__lang-list--item"><a href="#">javascript</a></li>
+          </ul>
+          <button class="tonic__btn" type="button">See Project</button>
         </div>
       </div>
     </section>
-  </div>
+    <!-- end of works -->
 
-  <!-- works -->
-  <section class="works" id="portfolio-id">
-    <div class="work tonic-1 tonic">
-      <div class="tonic-1__image-holder">
-      </div>
-      <div class="tonic__wrapper">
-        <h2 class="header tonic__header" >Tonic</h2>
-        <ul class="tonic__cat-list">
-          <li class="tonic__cat-list--1 tonic__cat-list--item">CANOPY</li>
-          <li class="tonic__cat-list--item">Back end dev</li>
-          <li class="tonic__cat-list--item">2015</li>
-        </ul>
-        <p class="tonic__text">A daily selection of privately     personalized reads; no accounts or sign-ups required.</p>
-        <ul class="tonic__lang-list">
-          <li class="tonic__lang-list--item"><a href="#">html</a></li>
-          <li class="tonic__lang-list--item"><a href="#">css</a></li>
-          <li class="tonic__lang-list--item"><a href="#">javascript</a></li>
-        </ul>
-        <button class="tonic__btn" type="button">
-          See Project
-        </button>
-      </div>
-    </div>
-
-
-    <div class="work tonic-2 tonic">
-      <div class="tonic-2__image-holder">
-      </div>
-      <div class="tonic__wrapper">
-        <h2 class="header tonic__header" >Multi-Post
-          Stories</h2>
-        <ul class="tonic__cat-list">
-          <li class="tonic__cat-list--1 tonic__cat-list--item">CANOPY</li>
-          <li class="tonic__cat-list--item">Back end dev</li>
-          <li class="tonic__cat-list--item">2015</li>
-        </ul>
-        <p class="tonic__text">A daily selection of privately     personalized reads; no accounts or sign-ups required.</p>
-        <ul class="tonic__lang-list">
-          <li class="tonic__lang-list--item"><a href="#">html</a></li>
-          <li class="tonic__lang-list--item"><a href="#">css</a></li>
-          <li class="tonic__lang-list--item"><a href="#">javascript</a></li>
-        </ul>
-        <button class="tonic__btn" type="button">
-          See Project
-        </button>
-      </div>
-    </div>
-
-    <div class="work tonic-3 tonic">
-      <div class="tonic-3__image-holder">
-      </div>
-      <div class="tonic__wrapper">
-        <h2 class="header tonic__header" >Tonic</h2>
-        <ul class="tonic__cat-list">
-          <li class="tonic__cat-list--1 tonic__cat-list--item">CANOPY</li>
-          <li class="tonic__cat-list--item">Back end dev</li>
-          <li class="tonic__cat-list--item">2015</li>
-        </ul>
-        <p class="tonic__text">A daily selection of privately     personalized reads; no accounts or sign-ups required.</p>
-        <ul class="tonic__lang-list">
-          <li class="tonic__lang-list--item"><a href="#">html</a></li>
-          <li class="tonic__lang-list--item"><a href="#">css</a></li>
-          <li class="tonic__lang-list--item"><a href="#">javascript</a></li>
-        </ul>
-        <button class="tonic__btn" type="button">
-          See Project
-        </button>
-      </div>
-    </div>
-
-    <div class="work tonic-4 tonic">
-      <div class="tonic-4__image-holder">
-      </div>
-      <div class="tonic__wrapper">
-        <h2 class="header tonic__header" >Multi-Post
-          Stories</h2>
-        <ul class="tonic__cat-list">
-          <li class="tonic__cat-list--1 tonic__cat-list--item">CANOPY</li>
-          <li class="tonic__cat-list--item">Back end dev</li>
-          <li class="tonic__cat-list--item">2015</li>
-        </ul>
-        <p class="tonic__text">A daily selection of privately     personalized reads; no accounts or sign-ups required.</p>
-        <ul class="tonic__lang-list">
-          <li class="tonic__lang-list--item"><a href="#">html</a></li>
-          <li class="tonic__lang-list--item"><a href="#">css</a></li>
-          <li class="tonic__lang-list--item"><a href="#">javascript</a></li>
-        </ul>
-        <button class="tonic__btn" type="button">
-          See Project
-        </button>
-      </div>
-    </div>
-  </section>
-  <!-- end of works -->
-
-  <!-- About Me -->
-  <section class="about" id="about-id">
-    <div class="landing about__landing">
-      <header>
-        <h2 class="header landing__header header__about">
-          <span>About</span>
-          <span>Myself</span>
-        </h2>
-      </header>
+    <!-- About Me -->
+    <section class="about" id="about-id">
+      <div class="landing about__landing">
+        <header>
+          <h2 class="header landing__header header__about">
+            <span>About</span>
+            <span>Myself</span>
+          </h2>
+        </header>
 
         <p class="landing__text">
-          Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If you
+          like what you see and have a project you need coded, don’t hestiate to
+          contact me.
         </p>
-        <div><a href="#" class="landing__link">
-        let's connect
-        </a></div>
+        <div><a href="#" class="landing__link"> let's connect </a></div>
         <div class="landing__social-media">
           <ul>
-            <li><a href="#">
-              <object class="landing__icon" data="./img/github.svg" height="20" width="20"></object>
-            </a></li>
-            <li><a href="#">
-              <object class="landing__icon" data="./img/Linkedin_icon.svg" height="20" width="20"></object>
-            </a></li>
-            <li><a href="#">
-              <object class="landing__icon" data="./img/hands.svg" height="20" width="20"></object>
-            </a></li>
-            <li><a href="#">
-            <object  class="landing__icon" data="./img/twitter.svg" height="20" width="20"></object>
-            </a></li>
-            <li><a href="#">
-              <object class="landing__icon" data="./img/medium.svg" height="20" width="20"></object>
-            </a></li>
+            <li>
+              <a
+                href="https://twitter.com/SirriCelles?t=fZl0blItFUQDC5vozH47nA&s=09"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="landing__icon"
+              >
+                <img src="./img/twitter.svg" alt="Twitter" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/sirri-celles-959a4a1aa"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="landing__icon"
+              >
+                <img src="./img/Linkedin_icon.svg" alt="Linkedin_icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="landing__icon">
+                <img src="./img/medium.svg" alt="medium_icon" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/SirriCelles"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="landing__icon"
+              >
+              <img src="./img/github.svg" alt="github_icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="landing__icon">
+                <img src="./img/hands.svg" alt="hands_icon" />
+              </a>
+            </li>
           </ul>
-      </div>
-      <button class="tonic__btn" type="button">
-      Get my resume
-      </button>
-    </div>
-
-    <div class="skills">
-      <ul class="skills__list">
-        <li class="skills__list-item">
-          <div class="skills__lang">
-            <div class="skills__lang-header">
-              <div class="skills__lang-text">Languages</div>
-              <div class="skills__lang-icon-wrapper">
-                <object class="skills__lang-icon" data="./img/SVG/chevron-small-down.svg" height="20" width="20"></object>
-              </div>
-            </div>
-            <ul class="skills__lang-list">
-              <li class="skills__lang-list--item"><a href="#" class="skills__lang-list--link">
-                <span class="skills__lang-list--iconjs"></span>
-                <span class="skills__lang-list--text">Javascript</span>
-              </a></li>
-              <li class="skills__lang-list--item"><a href="#" class="skills__lang-list--link">
-                <span class="skills__lang-list--iconht"></span>
-                <span class="skills__lang-list--text">HTML</span>
-                </a></li>
-              <li class="skills__lang-list--item"><a href="#" class="skills__lang-list--link">
-                <span class="skills__lang-list--iconcs"></span>
-                <span class="skills__lang-list--text">CSS</span>
-              </a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="skills__list-item">
-          <div class="frame">
-            <div class="skills__lang-header">
-              <div class="skills__lang-text">Frameworks</div>
-              <div class="skills__lang-icon-wrapper">
-                <object class="skills__lang-icon" data="./img/SVG/chevron-small-right.svg" height="20" width="20"></object>
-              </div>
-            </div>
         </div>
-        </li>
-        <li class="skills__list-item">
-          <div class="skill">
-            <div class="skills__lang-header">
-              <div class="skills__lang-text">Languages</div>
-              <div class="skills__lang-icon-wrapper">
-                <object class="skills__lang-icon" data="/img/SVG/chevron-small-right.svg" height="20" width="20"></object>
+        <button class="tonic__btn" type="button">Get my resume</button>
+      </div>
+
+      <div class="skills">
+        <ul class="skills__list">
+          <li class="skills__list-item">
+            <div class="skills__lang">
+              <div class="skills__lang-header">
+                <div class="skills__lang-text">Languages</div>
+                <div class="skills__lang-icon-wrapper">
+                  <object
+                    class="skills__lang-icon"
+                    data="./img/SVG/chevron-small-down.svg"
+                    height="20"
+                    width="20"
+                  ></object>
+                </div>
+              </div>
+              <ul class="skills__lang-list">
+                <li class="skills__lang-list--item">
+                  <a href="#" class="skills__lang-list--link">
+                    <span class="skills__lang-list--iconjs"></span>
+                    <span class="skills__lang-list--text">Javascript</span>
+                  </a>
+                </li>
+                <li class="skills__lang-list--item">
+                  <a href="#" class="skills__lang-list--link">
+                    <span class="skills__lang-list--iconht"></span>
+                    <span class="skills__lang-list--text">HTML</span>
+                  </a>
+                </li>
+                <li class="skills__lang-list--item">
+                  <a href="#" class="skills__lang-list--link">
+                    <span class="skills__lang-list--iconcs"></span>
+                    <span class="skills__lang-list--text">CSS</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="skills__list-item">
+            <div class="frame">
+              <div class="skills__lang-header">
+                <div class="skills__lang-text">Frameworks</div>
+                <div class="skills__lang-icon-wrapper">
+                  <object
+                    class="skills__lang-icon"
+                    data="./img/SVG/chevron-small-right.svg"
+                    height="20"
+                    width="20"
+                  ></object>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- end -->
+          </li>
+          <li class="skills__list-item">
+            <div class="skill">
+              <div class="skills__lang-header">
+                <div class="skills__lang-text">Languages</div>
+                <div class="skills__lang-icon-wrapper">
+                  <object
+                    class="skills__lang-icon"
+                    data="/img/SVG/chevron-small-right.svg"
+                    height="20"
+                    width="20"
+                  ></object>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- end -->
 
-  <!-- Contact Form  -->
-  <footer id="contact-id">
-    <div class="contact">
-      <h2 class="contact__header">Contact me</h2>
-    <p class="contact__text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-    <form action="https://formspree.io/f/mdobpebd" method="post" class="contact__form">
-      <ul class="contact__form-list">
-        <li class="contact__form-list--item">
-          <label for="name"></label>
-          <input type="text" id="name" class="contact__form-input" maxlength="30" placeholder="Full Name" required>
-        </li>
-        <li class="contact__form-list--item">
-          <label for="email"></label>
-          <input type="email" id="email" class="contact__form-input" placeholder="example@gmail.com" required>
-        </li>
-        <li class="contact__form-list--item">
-          <label for="message"></label>
-          <textarea name="message" id="message" cols="30" rows="10" class="contact__form-textarea" maxlength="500" placeholder="write a message here" required></textarea>
-        </li>
+    <!-- Contact Form  -->
+    <footer id="contact-id">
+      <div class="contact">
+        <h2 class="contact__header">Contact me</h2>
+        <p class="contact__text">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <form
+          action="https://formspree.io/f/mdobpebd"
+          method="post"
+          class="contact__form"
+        >
+          <ul class="contact__form-list">
+            <li class="contact__form-list--item">
+              <label for="name"></label>
+              <input
+                type="text"
+                id="name"
+                class="contact__form-input"
+                maxlength="30"
+                placeholder="Full Name"
+                required
+              />
+            </li>
+            <li class="contact__form-list--item">
+              <label for="email"></label>
+              <input
+                type="email"
+                id="email"
+                class="contact__form-input"
+                placeholder="example@gmail.com"
+                required
+              />
+            </li>
+            <li class="contact__form-list--item">
+              <label for="message"></label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                class="contact__form-textarea"
+                maxlength="500"
+                placeholder="write a message here"
+                required
+              ></textarea>
+            </li>
 
-        <li class="contact__form-list--item">
-          <button type="submit" class="contact__form-button">Get in touch</button>
-        </li>
-      </ul>
-    </form>
-    </div>
-  </footer>
-</body>
+            <li class="contact__form-list--item">
+              <button type="submit" class="contact__form-button">
+                Get in touch
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>
