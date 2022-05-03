@@ -42,12 +42,27 @@
     justify-content: space-between;
   }
 
+  @include sm {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
+  }
+
   @include lg {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
     padding: 2.4rem 15.5rem;
+    z-index: 1;
   }
 
   @include xl {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
     padding: 2.4rem 15.5rem;
+    z-index: 1;
   }
 
   &__logo {
@@ -765,7 +780,6 @@ footer {
   width: 100%;
   height: auto;
   background-color: #6070ff;
-  // clip-path: circle(90% at 62% 62%);
   border-top-left-radius: 9rem;
   margin-top: -7.7rem;
   background-image: url("../img/contact-me-shapes.svg");
@@ -802,13 +816,6 @@ footer {
     line-height: 52px;
     text-align: center;
     color: var(--color-white);
-    // @include lg {
-    //   padding: 21rem 1.2rem 1.2rem 1.2rem;
-    // }
-  
-    // @include xl {
-    //   padding: 10.3rem 2.4rem 2.4rem 2.4rem;
-    // }
   }
 
   &__text {

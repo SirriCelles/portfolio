@@ -75,12 +75,26 @@ p {
     .nav {
       padding: 2.4rem;
       justify-content: space-between; } }
+  @media (min-width: 376px) and (max-width: 575px) {
+    .nav {
+      position: fixed;
+      background-color: #fff;
+      width: 100%;
+      z-index: 1; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .nav {
-      padding: 2.4rem 15.5rem; } }
+      position: fixed;
+      background-color: #fff;
+      width: 100%;
+      padding: 2.4rem 15.5rem;
+      z-index: 1; } }
   @media (min-width: 992px) {
     .nav {
-      padding: 2.4rem 15.5rem; } }
+      position: fixed;
+      background-color: #fff;
+      width: 100%;
+      padding: 2.4rem 15.5rem;
+      z-index: 1; } }
   .nav__logo {
     font-size: 1.8rem;
     font-weight: 700;
