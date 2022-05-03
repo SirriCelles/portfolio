@@ -473,12 +473,12 @@ p {
   height: 126.2rem; }
   @media (max-width: 375px) {
     .about {
-      height: 122rem;
+      height: 125rem;
       width: 100%;
       border-top-right-radius: 9rem; } }
   @media (min-width: 376px) and (max-width: 575px) {
     .about {
-      height: 134rem; } }
+      height: 130rem; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .about {
       margin: 14.2rem 0 0 0;
@@ -501,10 +501,12 @@ p {
         padding: 0 2.4rem; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .about__landing {
+        flex-basis: 50%;
         margin: 14.2rem 1.85rem 0 3.2rem; } }
     @media (min-width: 992px) {
       .about__landing {
-        margin: 14.2rem 1.85rem 0 14.2rem; } }
+        flex-basis: 50%;
+        margin: 14.2rem 1.85rem 8.2rem 6.2rem; } }
 
 .skills {
   flex-basis: 60%;
@@ -514,10 +516,12 @@ p {
       margin: 0; } }
   @media (min-width: 992px) {
     .skills {
-      margin: 14.2rem 14.2rem 0 1.85rem; } }
+      margin: 14.2rem 6.2rem 0 1.85rem;
+      flex-basis: 50%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .skills {
-      margin: 14.2rem 0.2rem 0 1.85rem; } }
+      margin: 14.2rem 0.2rem 0 1.85rem;
+      flex-basis: 50%; } }
   .skills__list {
     list-style: none;
     margin: 0 3.6rem; }
@@ -594,32 +598,32 @@ p {
 
 footer {
   width: 100%;
+  height: auto;
   background-color: #6070ff;
-  clip-path: circle(90% at 62% 62%);
-  padding: 10.3rem 2.4rem 2.4rem 2.4rem;
   border-top-left-radius: 9rem;
-  margin-top: -6.7rem;
+  margin-top: -7.7rem;
   background-image: url("../img/contact-me-shapes.svg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top right;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    footer {
+      margin-top: -6.7rem; } }
 
 .contact {
+  padding: 2.4rem;
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  @media (max-width: 375px) {
-    .contact {
-      max-width: 27rem; } }
   .contact__header {
     margin-bottom: 1.2rem;
-    padding: 1.2rem;
+    padding-top: 12rem;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;

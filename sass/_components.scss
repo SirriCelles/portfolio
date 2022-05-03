@@ -571,13 +571,13 @@
   height: 126.2rem;
 
   @include xm {
-    height: 122rem;
+    height: 125rem;
     width: 100%;
     border-top-right-radius: 9rem;
   }
 
   @include sm {
-    height: 134rem;
+    height: 130rem;
   }
 
   @include lg {
@@ -605,11 +605,13 @@
     }
 
     @include lg {
+      flex-basis: 50%;
       margin: 14.2rem 1.85rem 0 3.2rem;
     }
 
     @include xl {
-      margin: 14.2rem 1.85rem 0 14.2rem;
+      flex-basis: 50%;
+      margin: 14.2rem 1.85rem 8.2rem 6.2rem;
     }
   }
 }
@@ -623,11 +625,13 @@
   }
 
   @include xl {
-    margin: 14.2rem 14.2rem 0 1.85rem;
+    margin: 14.2rem 6.2rem 0 1.85rem;
+    flex-basis: 50%;
   }
 
   @include lg {
     margin: 14.2rem 0.2rem 0 1.85rem;
+    flex-basis: 50%;
   }
 
   &__list {
@@ -739,21 +743,27 @@
 //CONTACT
 footer {
   width: 100%;
+  height: auto;
   background-color: #6070ff;
-  clip-path: circle(90% at 62% 62%);
-  padding: 10.3rem 2.4rem 2.4rem 2.4rem;
+  // clip-path: circle(90% at 62% 62%);
   border-top-left-radius: 9rem;
-  margin-top: -6.7rem;
+  margin-top: -7.7rem;
   background-image: url("../img/contact-me-shapes.svg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top right;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  @include lg {
+    margin-top: -6.7rem;
+  }
+
 }
 
 .contact {
+  padding: 2.4rem;
   width: 100%;
   height: auto;
   display: flex;
@@ -761,13 +771,10 @@ footer {
   justify-content: center;
   align-items: center;
 
-  @include xm {
-    max-width: 27rem;
-  }
 
   &__header {
     margin-bottom: 1.2rem;
-    padding: 1.2rem;
+    padding-top: 12rem ;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -775,6 +782,13 @@ footer {
     line-height: 52px;
     text-align: center;
     color: var(--color-white);
+    // @include lg {
+    //   padding: 21rem 1.2rem 1.2rem 1.2rem;
+    // }
+  
+    // @include xl {
+    //   padding: 10.3rem 2.4rem 2.4rem 2.4rem;
+    // }
   }
 
   &__text {
