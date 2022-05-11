@@ -13,7 +13,6 @@ navBackground.id = 'navBackground';
 navBackground.className = 'background';
 
 let landing = document.querySelector('.landing');
-// let landingPageChildren = document.querySelector('.landing-page').childNodes.querySelector('*:not(.nav__menu-box)');
 
 let menuLineWrapper = document.querySelector('.nav__menu-line');
 let menuLine = document.querySelectorAll('.nav__menu:not(nav__menu--1)');
@@ -27,13 +26,27 @@ let navLogo = document.querySelector('.nav__logo');
 let menuCloseIcon = document.getElementById('menuCloseIcon');
 
 menuIcon.addEventListener('click', function() {
+  if(!toggleMenu) {
+    onOpenMenu();
+    toggleMenu = true;
+  }
+});
+
+menuCloseIcon.addEventListener('click', function() {
+  if(toggleMenu) {
+    onCloseMenu();
+
+    toggleMenu = false;
+  }
+});
+
+// open menu
+let onOpenMenu = function() {
   landingPage.prepend(navBackground);
   menuCloseIcon.style.display = 'inline-block';
   landing.classList.add('filtertext');
   navLogo.classList.add('filtertext');
   menuLineWrapper.style.display = 'none';
-
-
 
   menuBox.style.display = 'flex';
   menuBox.classList.add('nav__menu-mobile');
@@ -41,16 +54,10 @@ menuIcon.addEventListener('click', function() {
   menuLinks.forEach(menuLink => {
     menuLink.classList.remove('nav__menu-link');
     menuLink.classList.add('nav__menu-mobile-item');
-  })
+  });
+}
 
-  // menuItemAtag.forEach(element => {
-  //   element.classList.add('nav__menu-mobile-item');
-  // });
-  // menuLineWrapper.style.zIndex = 2000;
-  // menuLine.forEach(el => {
-  //   el.classList.remove('nav_menu');
-  //   el.classList.add('menu-close')
-  // });
-
-
-});
+let onCloseMenu = function() {
+  landingPage.removeChild(navBackground);
+  menuCloseIcon.style.display = 'none';
+}
