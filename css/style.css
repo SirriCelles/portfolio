@@ -85,7 +85,7 @@ p {
 
 .background {
   padding: 0;
-  background: #6070FF no-repeat center;
+  background: #6070ff no-repeat center;
   background-size: cover;
   min-width: 40.5rem;
   min-height: 68.2rem;
@@ -93,7 +93,7 @@ p {
   width: 100%;
   backdrop-filter: blur(5px);
   z-index: 1000;
-  opacity: .75;
+  opacity: 0.75;
   position: absolute;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
 
@@ -107,7 +107,7 @@ p {
   height: 3rem;
   font-weight: 300;
   z-index: 2000;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .nav {
   padding: 2.4rem;
@@ -115,7 +115,7 @@ p {
   justify-content: space-between;
   align-items: center;
   max-height: 11.8rem;
-  transition: all .2s; }
+  transition: all 0.2s; }
   @media (max-width: 375px) {
     .nav {
       padding: 2.4rem;
@@ -193,7 +193,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     position: absolute;
-    top: calc(14% - 2.4rem/2);
+    top: calc(14% - 2.4rem / 2);
     left: 2.8rem; }
   @media (max-width: 375px) {
     .nav__menu-item {

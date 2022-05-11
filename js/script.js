@@ -39,6 +39,15 @@ menuCloseIcon.addEventListener('click', function() {
   }
 });
 
+menuLinks.forEach(menuLink => {
+  menuLink.addEventListener('click', function() {
+    if(toggleMenu) {
+      onCloseMenu();
+      toggleMenu = false;
+    }
+  });
+});
+
 // open menu
 let onOpenMenu = function() {
   landingPage.prepend(navBackground);
