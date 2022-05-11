@@ -35,7 +35,6 @@ menuIcon.addEventListener('click', function() {
 menuCloseIcon.addEventListener('click', function() {
   if(toggleMenu) {
     onCloseMenu();
-
     toggleMenu = false;
   }
 });
@@ -60,4 +59,13 @@ let onOpenMenu = function() {
 let onCloseMenu = function() {
   landingPage.removeChild(navBackground);
   menuCloseIcon.style.display = 'none';
+  landing.classList.remove('filtertext');
+  navLogo.classList.remove('filtertext');
+  menuLineWrapper.style.display = 'block';
+  menuBox.style.display = 'none';
+  menuBox.classList.remove('nav__menu-mobile');
+  menuLinks.forEach(menuLink => {
+    menuLink.classList.remove('nav__menu-mobile-item');
+    menuLink.classList.add('nav__menu-link');
+  });
 }

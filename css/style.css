@@ -75,6 +75,14 @@ p {
   to {
     transform: rotate(360deg); } }
 
+@keyframes displayMenu {
+  0% {
+    height: 20%; }
+  50% {
+    height: 70%; }
+  100% {
+    height: 100%; } }
+
 .background {
   padding: 0;
   background: #6070FF no-repeat center;
@@ -86,7 +94,8 @@ p {
   backdrop-filter: blur(5px);
   z-index: 1000;
   opacity: .75;
-  position: absolute; }
+  position: absolute;
+  transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
 
 #menuCloseIcon {
   display: none;
@@ -105,7 +114,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-height: 11.8rem; }
+  max-height: 11.8rem;
+  transition: all .2s; }
   @media (max-width: 375px) {
     .nav {
       padding: 2.4rem;
