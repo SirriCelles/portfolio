@@ -2,8 +2,8 @@
 //  LANDING PAGE
 
 .filtertext{
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
 }
 
 .menu-close {
@@ -57,8 +57,21 @@
   backdrop-filter: blur(5px);
   // margin: 0 -5rem 0 -2.4rem;
   z-index: 1000;
-  opacity: .9;
+  opacity: .75;
   position: absolute;
+}
+
+#menuCloseIcon {
+  display: none;
+  fill: var(--color-white);
+  position: absolute;
+  top: 3.8rem;
+  right: 3.8rem;
+  width: 3rem;
+  height: 3rem;
+  font-weight: 300;
+  z-index: 2000;
+  transition: all .2s;
 }
 
 .nav {
@@ -123,9 +136,6 @@
     @include xm {
       display: block;
       flex: 0 0 2rem;
-
-       //
-      //  display: none;
     }
 
     @include sm {
@@ -149,6 +159,7 @@
     }
   }
 
+
   &__menu-box {
     list-style: none;
     display: flex;
@@ -157,14 +168,6 @@
 
     @include xm {
       display: none;
-
-      // //
-      // flex-direction: column;
-      // justify-content: center;
-      // align-items: flex-start;
-      // position: absolute;
-      // top: calc(15% - 2.4rem/2);
-      // left: 2.8rem;
     }
 
     @include sm {
@@ -172,35 +175,46 @@
     }
   }
 
+  &__menu-mobile{
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: absolute;
+      top: calc(14% - 2.4rem/2);
+      left: 2.8rem;
+  }
+
   &__menu-item {
-    a {
-      text-decoration: none;
-      margin: 0 1rem;
-      color: var(--color-text);
-      text-transform: capitalize;
-      font-weight: 500;
-      line-height: 2rem;
-      font-size: 1.5rem;
-      text-align: center;
-      cursor: pointer;
-
-      //
-      @include xm {
-        color: var(--color-white);
-        font-weight: 600;
-        line-height: 4.4rem;
-        font-size: 3.2rem;
-        filter: none !important;
-        -webkit-filter: none !important;
-      }
-    }
-
-    //
     @include xm {
-        // color: var(--color-white);
         z-index: 2000;
-
       }
+  }
+
+  &__menu-link {
+
+    text-decoration: none;
+    margin: 0 1rem;
+    color: var(--color-text);
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__menu-mobile-item {
+    text-decoration: none;
+    margin: 0 1rem;
+    text-transform: capitalize;
+    color: var(--color-white);
+    font-weight: 600;
+    line-height: 6.4rem;
+    font-size: 3.2rem;
+    text-align: center;
+    cursor: pointer;
+    filter: none !important;
+    -webkit-filter: none !important;
   }
 }
 
