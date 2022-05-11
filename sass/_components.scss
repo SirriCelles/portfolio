@@ -45,26 +45,13 @@
   }
 }
 
-@keyframes displayMenu {
-  0% {
-    height: 20%;
-  }
-
-  50% {
-    height: 70%;
-  }
-
-  100% {
-    height: 100%;
-  }
-}
 
 .background {
   padding: 0;
   background: #6070ff no-repeat center;
   background-size: cover;
-  min-width: 40.5rem;
-  min-height: 68.2rem;
+  max-width: 57.5rem;
+  max-height: 88.2rem;
   height: 100%;
   width: 100%;
   backdrop-filter: blur(5px);
@@ -72,6 +59,10 @@
   opacity: 0.75;
   position: absolute;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+
+  @include xm {
+    max-height: 71.2rem;
+  }
 }
 
 #menuCloseIcon {
@@ -167,10 +158,6 @@
     @include xm {
       display: block;
     }
-
-    @include sm {
-      display: block;
-    }
   }
 
   &__menu-box {
@@ -180,10 +167,6 @@
     align-items: center;
 
     @include xm {
-      display: none;
-    }
-
-    @include sm {
       display: none;
     }
   }
@@ -198,9 +181,7 @@
   }
 
   &__menu-item {
-    @include xm {
-      z-index: 2000;
-    }
+    z-index: 2000;
   }
 
   &__menu-link {

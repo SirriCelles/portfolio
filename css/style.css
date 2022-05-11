@@ -75,20 +75,12 @@ p {
   to {
     transform: rotate(360deg); } }
 
-@keyframes displayMenu {
-  0% {
-    height: 20%; }
-  50% {
-    height: 70%; }
-  100% {
-    height: 100%; } }
-
 .background {
   padding: 0;
   background: #6070ff no-repeat center;
   background-size: cover;
-  min-width: 40.5rem;
-  min-height: 68.2rem;
+  max-width: 57.5rem;
+  max-height: 88.2rem;
   height: 100%;
   width: 100%;
   backdrop-filter: blur(5px);
@@ -96,6 +88,9 @@ p {
   opacity: 0.75;
   position: absolute;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
+  @media (max-width: 375px) {
+    .background {
+      max-height: 71.2rem; } }
 
 #menuCloseIcon {
   display: none;
@@ -174,18 +169,12 @@ p {
     @media (max-width: 375px) {
       .nav__menu {
         display: block; } }
-    @media (min-width: 376px) and (max-width: 575px) {
-      .nav__menu {
-        display: block; } }
   .nav__menu-box {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center; }
     @media (max-width: 375px) {
-      .nav__menu-box {
-        display: none; } }
-    @media (min-width: 376px) and (max-width: 575px) {
       .nav__menu-box {
         display: none; } }
   .nav__menu-mobile {
@@ -195,9 +184,8 @@ p {
     position: absolute;
     top: calc(14% - 2.4rem / 2);
     left: 2.8rem; }
-  @media (max-width: 375px) {
-    .nav__menu-item {
-      z-index: 2000; } }
+  .nav__menu-item {
+    z-index: 2000; }
   .nav__menu-link {
     text-decoration: none;
     margin: 0 1rem;
