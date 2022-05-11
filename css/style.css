@@ -93,7 +93,9 @@ p {
       max-height: 71.2rem; } }
 
 #menuCloseIcon {
-  display: none;
+  display: none; }
+
+.menu__close-icon {
   fill: var(--color-white);
   position: absolute;
   top: 3.8rem;
