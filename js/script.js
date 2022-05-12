@@ -51,12 +51,13 @@ menuLinks.forEach(menuLink => {
 // open menu
 let onOpenMenu = function() {
   landingPage.prepend(navBackground);
-  menuCloseIcon.style.display = 'inline-block';
+  menuCloseIcon.style.display = 'block';
   landing.classList.add('filtertext');
   navLogo.classList.add('filtertext');
   menuLineWrapper.style.display = 'none';
 
   menuBox.style.display = 'flex';
+  menuBox.classList.remove('nav__menu-box');
   menuBox.classList.add('nav__menu-mobile');
 
   menuLinks.forEach(menuLink => {
@@ -73,6 +74,7 @@ let onCloseMenu = function() {
   menuLineWrapper.style.display = 'block';
   menuBox.style.display = 'none';
   menuBox.classList.remove('nav__menu-mobile');
+  menuBox.classList.add('nav__menu-box');
   menuLinks.forEach(menuLink => {
     menuLink.classList.remove('nav__menu-mobile-item');
     menuLink.classList.add('nav__menu-link');
