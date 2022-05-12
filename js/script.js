@@ -80,3 +80,56 @@ let onCloseMenu = function() {
     menuLink.classList.add('nav__menu-link');
   });
 }
+
+// Pop Up
+let project = [
+  {
+    id: 1,
+    title:'Tonic',
+    catList: ['CANOPY', 'Backend dev', 2015],
+    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    langList: ['html', 'css', 'javacript'],
+    imageDesktop:'../img/Snapshoot\ Portfolio-mbile.png',
+    imageMobile: '../img/blog_drbl_4x.webp',
+    linkUrl:'https://sirricelles.github.io/portfolio/',
+    gitUrl:'https://github.com/SirriCelles/portfolio'
+
+  },
+  {
+    id: 2,
+    title:'Multi-Post Stories',
+    catList: ['CANOPY', 'Backend dev', 2015],
+    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    langList: ['html', 'css', 'javacript'],
+    imageDesktop:'../img/Snapshoot\ Portfolio.png',
+    imageMobile: '../img/works2.png',
+    linkUrl:'https://sirricelles.github.io/portfolio/',
+    gitUrl:'https://github.com/SirriCelles/portfolio'
+
+  },
+  {
+    id: 3,
+    title:'Tonic',
+    catList: ['CANOPY', 'Backend dev', 2015],
+    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    langList: ['html', 'css', 'javacript'],
+    imageDesktop:'../img/blog_drbl_4x.webp',
+    imageMobile: '../img/Snapshoot\ Portfolio.png',
+    linkUrl:'https://sirricelles.github.io/portfolio/',
+    gitUrl:'https://github.com/SirriCelles/portfolio'
+
+  },
+  {
+    id: 4,
+    title:'Multi-Post Stories',
+    catList: ['CANOPY', 'Backend dev', 2015],
+    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    langList: ['html', 'css', 'javacript'],
+    imageDesktop:'../img/works2.png',
+    imageMobile: '../img/Snapshoot\ Portfolio\ \(1\).png',
+    linkUrl:'https://sirricelles.github.io/portfolio/',
+    gitUrl:'https://github.com/SirriCelles/portfolio'
+
+  }
+];
+
