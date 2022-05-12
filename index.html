@@ -9,28 +9,33 @@
   </head>
   <body>
     <div class="landing-page">
+      <a href="#" id="menuCloseIcon">
+        <svg class="menu__close-icon">
+          <use xlink:href="img/symbol-defs.svg#icon-cross"></use>
+        </svg>
+      </a>
       <header>
         <nav class="nav">
           <div class="nav__logo">
             <a href="#" rel="noopener noreferrer">my logo</a>
           </div>
-          <div class="nav__menu-line">
+          <a href="#" class="nav__menu-line">
             <div class="nav__menu"></div>
+            <div class="nav__menu nav__menu--1"></div>
             <div class="nav__menu"></div>
-            <div class="nav__menu"></div>
-          </div>
-
+          </a>
           <ul class="nav__menu-box">
             <li class="nav__menu-item">
-              <a href="#portfolio-id">Portfolio</a>
+              <a class="nav__menu-link" href="#portfolio-id">Portfolio</a>
             </li>
             <li class="nav__menu-item">
-              <a href="#about-id">About</a>
+              <a class="nav__menu-link"  href="#about-id">About</a>
             </li>
             <li class="nav__menu-item">
-              <a href="#contact-id">Contact</a>
+              <a class="nav__menu-link"  href="#contact-id">Contact</a>
             </li>
           </ul>
+
         </nav>
       </header>
       <!-- landing page -->
@@ -384,5 +389,7 @@
         </form>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

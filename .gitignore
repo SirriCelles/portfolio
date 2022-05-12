@@ -3,3 +3,4 @@
 # Add lint files here
 node_modules
 unused_code.html
+.vscode
