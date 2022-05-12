@@ -129,7 +129,13 @@ let project = [
     imageMobile: '../img/Snapshoot\ Portfolio\ \(1\).png',
     linkUrl:'https://sirricelles.github.io/portfolio/',
     gitUrl:'https://github.com/SirriCelles/portfolio'
-
   }
 ];
+
+let seeProjectBtn = document.querySelector('.tonic__btn');
+// document.querySelector("input[type='hidden']");
+let inputId = seeProjectBtn.querySelector("input[type='hidden']").value;
+console.log(inputId);
+
+
 

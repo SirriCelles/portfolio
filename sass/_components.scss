@@ -25,6 +25,7 @@
   border-bottom-left-radius: 9.5rem;
   width: 100%;
   height: 86.6rem;
+  position: relative;
 
   @include xm {
     height: 66.8rem;
@@ -718,50 +719,6 @@
   }
 }
 
-// ///// POPUP
-.popup {
-  &__text {
-    margin-top: 1.2rem;
-  }
-  &__lang-list {
-    margin-bottom: 2.4rem;
-  }
-  &__divider {
-    margin-bottom: 2.4rem;
-    border: 1px solid #EBECF0;
-  }
-
-  &__btn-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.2rem;
-
-  }
-
-  &__btn-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.2rem 1.2rem;
-    border-radius: .8rem;
-    border: 1px solid var(--color-primary);
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-
-    span {
-      color: var(--color-primary-dark);
-      font-size: 1.5rem;
-      font-weight: 500;
-      line-height: 2rem;
-    }
-  }
-
-  &__btn-icon{
-    margin-left: 1.4rem;
-  }
-}
 
 ////////////
 // ABOUT
@@ -1113,5 +1070,94 @@ footer {
       box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
       transition: all 0.2s;
     }
+  }
+}
+
+// ///// POPUP
+.popup {
+  &__close {
+    display: none;
+  }
+  &__open {
+    display: block;
+  }
+  &__works {
+    position: fixed;
+    z-index: 5000;
+    max-height: 71.3rem;
+    height: 100%;
+    top: 0%;
+    padding-top: 11%;
+    padding-left: 0.2rem;
+    overflow: auto;
+    backdrop-filter: blur(7px);
+  }
+  &__work {
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: 2.4rem;
+    padding: 1.6rem;
+    background-color: var(--color-white);
+
+    @include xm {
+      border-radius: 1.6rem;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.2rem;
+  }
+
+  &__header-text {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+  &__close-icon {
+    width: 3rem;
+    height: 2.5rem;
+    fill: #67798E;
+  }
+  &__text {
+    margin-top: 1.2rem;
+  }
+  &__lang-list {
+    margin-bottom: 2.4rem;
+  }
+  &__divider {
+    margin-bottom: 2.4rem;
+    border: 1px solid #EBECF0;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+
+  }
+
+  &__btn-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 1.2rem;
+    border-radius: .8rem;
+    border: 1px solid var(--color-primary);
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+
+    span {
+      color: var(--color-primary-dark);
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 2rem;
+    }
+  }
+
+  &__btn-icon{
+    margin-left: 1.4rem;
   }
 }
