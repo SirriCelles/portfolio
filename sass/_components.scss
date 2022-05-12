@@ -4,11 +4,12 @@
 .filtertext {
   @include xm {
     filter: blur(6px);
-  -webkit-filter: blur(6px);
+    -webkit-filter: blur(6px);
   }
+
   @include sm {
     filter: blur(6px);
-  -webkit-filter: blur(6px);
+    -webkit-filter: blur(6px);
   }
 }
 
@@ -85,10 +86,12 @@
 
 #menuCloseIcon {
   display: none;
-  @include lg{
+
+  @include lg {
     display: none !important;
   }
-  @include xl{
+
+  @include xl {
     display: none !important;
   }
 }
@@ -104,10 +107,11 @@
   z-index: 2000;
   transition: all 0.2s;
 
-  @include lg{
+  @include lg {
     display: none;
   }
-  @include xl{
+
+  @include xl {
     display: none;
   }
 }
@@ -176,6 +180,7 @@
     width: 100%;
     border: 1px solid var(--color-primary);
     margin: 0.4rem 0;
+
     @include sm {
       display: block;
     }
@@ -194,6 +199,7 @@
     @include xm {
       display: none;
     }
+
     @include sm {
       display: none;
     }
@@ -228,6 +234,7 @@
     @include xm {
       z-index: 2000;
     }
+
     @include sm {
       z-index: 2000;
     }
