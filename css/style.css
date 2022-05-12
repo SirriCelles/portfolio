@@ -594,6 +594,41 @@ p {
     .tonic-4__image-holder {
       flex-direction: row-reverse; } }
 
+.popup__text {
+  margin-top: 1.2rem; }
+
+.popup__lang-list {
+  margin-bottom: 2.4rem; }
+
+.popup__divider {
+  margin-bottom: 2.4rem;
+  border: 1px solid #EBECF0; }
+
+.popup__btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem; }
+
+.popup__btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 1.2rem;
+  border-radius: .8rem;
+  border: 1px solid var(--color-primary);
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none; }
+  .popup__btn-link span {
+    color: var(--color-primary-dark);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem; }
+
+.popup__btn-icon {
+  margin-left: 1.4rem; }
+
 .about {
   margin: 11.4rem 0 0 0;
   width: 100%;
