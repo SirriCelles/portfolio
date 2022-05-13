@@ -91,6 +91,7 @@ let showModal = (data, id) => {
         liveLink.setAttribute('href', project.linkUrl);
         gitLink.setAttribute('href', project.gitUrl);
         imageHolder.classList.add(project.image);
+        imageHolder.style.maxWidth = '84.5rem';
         currentImage = project.image;
         Object.values(tonicLangs).forEach((el, index )=> {
           el.textContent = project.catList[index];

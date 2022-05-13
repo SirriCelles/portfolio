@@ -139,11 +139,15 @@
     @include lg {
       margin-top: 2.2rem;
       margin-bottom: 2.2rem;
+      justify-content: center;
+      align-items: center;
     }
 
     @include xl {
       margin-top: 2.2rem;
       margin-bottom: 2.2rem;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -153,6 +157,7 @@
     border-radius: 0.8rem;
 
     a {
+      font-size: 1.2rem;
       text-decoration: none;
       color: var(--color-primary);
     }
@@ -195,6 +200,7 @@
     width: 100%;
     background: url("../img/Snapshoot\ Portfolio-mbile.png") no-repeat center center;
     background-size: cover;
+    margin: 0 auto;
     margin-bottom: 12px;
     padding: 2.4rem;
 
@@ -224,6 +230,7 @@
     width: 100%;
     background: url("../img/Snapshoot\ Portfolio.png") no-repeat center center;
     background-size: cover;
+    margin: 0 auto;
     margin-bottom: 12px;
     padding: 2.4rem;
 
@@ -252,6 +259,7 @@
     width: 100%;
     background: url("../img/blog_drbl_4x.webp") no-repeat center center;
     background-size: cover;
+    margin: 0 auto;
     margin-bottom: 12px;
     padding: 2.4rem;
 
@@ -272,6 +280,7 @@
     width: 100%;
     background: url("../img/works2.png") no-repeat center center;
     background-size: cover;
+    margin: 0 auto;
     margin-bottom: 12px;
     padding: 2.4rem;
 
