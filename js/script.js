@@ -83,8 +83,29 @@ let onCloseMenu = function() {
 
 // Form Validation
 let form = document.querySelector('.contact__form');
+let formBtn = document.querySelector("button[type='name']");
+let email = form.elements['email'];
+let submitStatus = document.querySelector('#submit-status');
+const invalidEmail = "Please enter a valid email address."
 form.addEventListener('submit', function(event) {
   event.preventDefault();
+  const loweremailVal = (email.value).toLowerCase();
+  if(email.value !== loweremailVal) {
+    displayError(submitStatus, invalidEmail);
+    return;
+  }
+  else {
+    form.submit();
+  }
 });
 
+function showMessage(selector, message, type) {
+	selector.innerText = message;
+	selector.className = type ? "valid" : "invalid";
+	return type;
+}
+
+function displayError(input, message) {
+	return showMessage(input, message, false);
+}
 
