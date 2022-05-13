@@ -153,72 +153,72 @@
     }
   }
 
-  &__lang-link {
-    padding: 0 1.2rem;
-    background-color: var(--color-primary-light-2);
-    border-radius: 0.8rem;
+  // &__lang-link {
+  //   padding: 0 1.2rem;
+  //   background-color: var(--color-primary-light-2);
+  //   border-radius: 0.8rem;
 
-    a {
-      font-size: 1.2rem;
-      text-decoration: none;
-      color: var(--color-primary);
-    }
+  //   a {
+  //     font-size: 1.2rem;
+  //     text-decoration: none;
+  //     color: var(--color-primary);
+  //   }
 
-    @include xm {
-      padding: 0.4rem 1.2rem;
-      font-size: 1.2rem;
-    }
+  //   @include xm {
+  //     padding: 0.4rem 1.2rem;
+  //     font-size: 1.2rem;
+  //   }
 
-    @include sm {
-      padding: 0.4rem 1.2rem;
-      font-size: 1.2rem;
-    }
-  }
+  //   @include sm {
+  //     padding: 0.4rem 1.2rem;
+  //     font-size: 1.2rem;
+  //   }
+  // }
 
-  &__list2 {
-    @include xm {
-      display: none;
-    }
+  // &__list2 {
+  //   @include xm {
+  //     display: none;
+  //   }
 
-    @include sm {
-      display: none;
-    }
-  }
+  //   @include sm {
+  //     display: none;
+  //   }
+  // }
 
-  &__divider {
-    margin-bottom: 2.4rem;
-    border: 1px solid #ebecf0;
-  }
+  // &__divider {
+  //   margin-bottom: 2.4rem;
+  //   border: 1px solid #ebecf0;
+  // }
 
-  &__btn-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.2rem;
-  }
+  // &__btn-wrapper {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 1rem;
+  //   margin-bottom: 1.2rem;
+  // }
 
-  &__btn-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.2rem 1.2rem;
-    border-radius: 0.8rem;
-    border: 1px solid var(--color-primary);
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
+  // &__btn-link {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   padding: 1.2rem 1.2rem;
+  //   border-radius: 0.8rem;
+  //   border: 1px solid var(--color-primary);
+  //   text-align: center;
+  //   cursor: pointer;
+  //   text-decoration: none;
 
-    span {
-      color: var(--color-primary-dark);
-      font-size: 1.5rem;
-      font-weight: 500;
-      line-height: 2rem;
-    }
-  }
+  //   span {
+  //     color: var(--color-primary-dark);
+  //     font-size: 1.5rem;
+  //     font-weight: 500;
+  //     line-height: 2rem;
+  //   }
+  // }
 
-  &__btn-icon {
-    margin-left: 1.4rem;
-  }
+  // &__btn-icon {
+  //   margin-left: 1.4rem;
+  // }
 }
 
 #popupImageId {
