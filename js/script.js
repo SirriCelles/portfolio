@@ -87,6 +87,9 @@ let formBtn = document.querySelector("button[type='name']");
 let email = form.elements['email'];
 let submitStatus = document.querySelector('#submit-status');
 const invalidEmail = "Please enter a valid email address."
+
+// Preserve form data
+
 form.addEventListener('submit', function(event) {
   event.preventDefault();
   const loweremailVal = (email.value).toLowerCase();
@@ -95,6 +98,7 @@ form.addEventListener('submit', function(event) {
     return;
   }
   else {
+
     form.submit();
   }
 });
@@ -108,4 +112,31 @@ function showMessage(selector, message, type) {
 function displayError(input, message) {
 	return showMessage(input, message, false);
 }
+
+
+// testing for avialabilty
+function storageAvialabilty(type) {
+  var storage;
+  try{
+    storage = window[type];
+    var x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  }catch(e) {
+    return e instanceof DOMException && (
+      // everything except Firefox
+      e.code === 22 ||
+      // Firefox
+      e.code === 1014 ||
+      // test name field too, because code might not be present
+      // everything except Firefox
+      e.name === 'QuotaExceededError' ||
+      // Firefox
+      e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+      // acknowledge QuotaExceededError only if there's something already stored
+      (storage && storage.length !== 0);
+  }
+}
+
 
