@@ -3,6 +3,13 @@
 let toggleMenu;
 window.onload = (event) => {
   toggleMenu = false;
+  if(localStorage.getItem('formData')) {
+    const data = localStorage.getItem('formData');
+    const jsonData =  JSON.parse(data);
+    email.value = jsonData.email;
+    form.elements['name'].value = jsonData.name;
+    form.elements['message'].value = jsonData.message;
+  };
 };
 
 
@@ -98,7 +105,20 @@ form.addEventListener('submit', function(event) {
     return;
   }
   else {
+    if (storageAvialabilty('localStorage')) {
+      let formData = {
+        email: email.value,
+        name: form.elements['name'].value,
+        message: form.elements['message'].value
+      };
 
+      if (localStorage.getItem('formData')) {
+        localStorage.removeItem('formData');
+      }
+      localStorage.setItem('formData', JSON.stringify(formData));
+    }else {
+      console.log('Sorry!, Unable to use browser storage');
+    }
     form.submit();
   }
 });
