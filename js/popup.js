@@ -70,12 +70,12 @@ Object.values(seeProjectBtn).forEach(btn => {
   });
 });
 
-// popUpCloseIcon.addEventListener('click', function() {
-//   imageHolder.classList.remove(currentImage);
-//   body.style.position = 'relative';
-//   popUp.classList.remove('popup__open');
-//   popUp.classList.add('popup__close');
-// });
+ popUpCloseIcon.addEventListener('click', function() {
+   imageHolder.classList.remove(currentImage);
+   body.style.position = 'relative';
+   popUp.classList.remove('popup__open');
+   popUp.classList.add('popup__close');
+ });
 
 let showModal = (data, id) => {
   if(!data || !id) {
