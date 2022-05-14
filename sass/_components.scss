@@ -777,3 +777,13 @@ footer {
     }
   }
 }
+
+.valid {
+  display: block;
+}
+
+.invalid {
+  display: block;
+  color: red;
+  margin-bottom: 0.2rem;
+}
