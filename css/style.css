@@ -679,6 +679,14 @@ footer {
       box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
       transition: all 0.2s; }
 
+.valid {
+  display: block; }
+
+.invalid {
+  display: block;
+  color: red;
+  margin-bottom: .2rem; }
+
 .tonic {
   display: flex;
   flex-direction: column;
